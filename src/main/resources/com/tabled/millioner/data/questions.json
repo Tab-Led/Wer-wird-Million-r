@@ -1,0 +1,1346 @@
+{
+  "en": {
+    "easy": {
+            "1": {
+              "question": "What is the smallest planet in the Solar System?",
+              "options": ["Venus", "Earth", "Mercury", "Mars"],
+              "answer": "Mercury"
+            },
+            "2": {
+              "question": "What is the name of the famous palace in Vienna?",
+              "options": ["Buckingham Palace","Schönbrunn Palace", "Versailles", "Alhambra"],
+              "answer": "Schönbrunn Palace"
+            },
+            "3": {
+              "question": "How many continents are there in the world?",
+              "options": ["6", "5", "8","7"],
+              "answer": "7"
+            },
+            "4": {
+              "question": "Who painted 'The Starry Night'?",
+              "options": ["Pablo Picasso","Vincent van Gogh", "Claude Monet", "Leonardo da Vinci"],
+              "answer": "Vincent van Gogh"
+            },
+            "5": {
+              "question": "What is the name of the closest galaxy to the Milky Way?",
+              "options": ["Andromeda", "Triangulum", "Whirlpool", "Sombrero"],
+              "answer": "Andromeda"
+            },
+            "6": {
+              "question": "What is the most populous country in the world?",
+              "options": ["India", "USA", "China","Russia"],
+              "answer": "China"
+            },
+            "7": {
+              "question": "Who invented the telephone?",
+              "options": ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Guglielmo Marconi"],
+              "answer": "Alexander Graham Bell"
+            },
+            "8": {
+              "question": "What is the chemical symbol for sodium?",
+              "options": [ "S", "N", "Na", "Si"],
+              "answer": "Na"
+            },
+            "9": {
+              "question": "What is the name of the Roman god of war?",
+              "options": ["Kratos", "Apollo", "Neptune","Mars"],
+              "answer": "Mars"
+            },
+            "10": {
+              "question": "Which famous scientist is known for his work on the laws of motion?",
+              "options": ["Galileo Galilei", "Isaac Newton", "Albert Einstein", "Stephen Hawking"],
+              "answer": "Isaac Newton"
+            },
+            "11": {
+              "question": "What is the name of the process by which water vapor becomes liquid?",
+              "options": ["Precipitation", "Condensation", "Sublimation"],
+              "answer": "Condensation"
+            },
+            "12": {
+              "question": "What is the name of the spaceship in Star Wars piloted by Han Solo?",
+              "options": ["Enterprise", "Millennium Falcon", ",Serenity", "Death Star"],
+              "answer": "Millennium Falcon"
+            },
+            "13": {
+              "question": "What is the name of the princess Mario is often trying to rescue?",
+              "options": [ "Princess Daisy", "Rosalina", "Zelda", "Princess Peach"],
+              "answer": "Princess Peach"
+            },
+            "14": {
+              "question": "What is the name of the animated movie about emotions inside a girl's mind?",
+              "options": ["Up", "Coco", "Zootopia", "Inside Out"],
+              "answer": "Inside Out"
+            },
+            "15": {
+              "question": "Which actor played Iron Man in the Marvel Cinematic Universe?",
+              "options": ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo", "Chris Hemsworth"],
+              "answer": "Robert Downey Jr."
+            },
+            "16": {
+              "question": "In which game do players build structures and survive against creatures like Creepers?",
+              "options": ["Fortnite", "Minecraft" ,"Roblox", "Terraria"],
+              "answer": "Minecraft"
+            },
+            "17": {
+              "question": "What is the art style associated with Pablo Picasso?",
+              "options": ["Cubism", "Impressionism", "Surrealism", "Baroque"],
+              "answer": "Cubism"
+            },
+            "18": {
+              "question": "What is the name of the AI antagonist in 'The Matrix'?",
+              "options": ["HAL 9000", "Ultron", "Skynet", "Agent Smith"],
+              "answer": "Agent Smith"
+            },
+            "19": {
+              "question": "What is the name of the spaceship in the 'Alien' movie?",
+              "options": ["Enterprise", "Serenity", "Nostromo", "Discovery"],
+              "answer": "Nostromo"
+            },
+            "20": {
+              "question": "Which animal is the symbol of the World Wildlife Fund (WWF)?",
+              "options": ["Panda", "Tiger", "Elephant", "Dolphin"],
+              "answer": "Panda"
+            },
+            "21": {
+              "question": "Which country gifted the Statue of Liberty to the United States?",
+              "options": ["Italy", "Spain", "Germany", "France"],
+              "answer": "France"
+            },
+            "22": {
+              "question": "What is the name of the ancient Egyptian writing system?",
+              "options": [ "Cuneiform", "Alphabet", "Hieroglyphics", "Pictograms"],
+              "answer": "Hieroglyphics"
+            },
+            "23": {
+              "question": "Which country was formerly known as Persia?",
+              "options": ["Iraq", "Iran", "Egypt", "Turkey"],
+              "answer": "Iran"
+            },
+            "24": {
+              "question": "What is the name of the famous trading route that connected Europe and Asia?",
+              "options": ["Spice Route", "Tea Route", "Silk Road", "Amber Road"],
+              "answer": "Silk Road"
+            },
+            "25": {
+              "question": "Who discovered penicillin?",
+              "options": ["Marie Curie", "Louis Pasteur", "Alexander Fleming", "Gregor Mendel"],
+              "answer": "Alexander Fleming"
+            },
+            "26": {
+              "question": "Which ancient civilization is known for inventing the wheel?",
+              "options": ["Egyptians", "Greeks", "Mesopotamians", "Chinese"],
+              "answer": "Mesopotamians"
+            },
+            "27": {
+              "question": "Which famous scientist proposed the heliocentric model of the solar system?",
+              "options": ["Galileo Galilei", "Isaac Newton", "Johannes Kepler", "Nicolaus Copernicus"],
+              "answer": "Nicolaus Copernicus"
+            },
+            "28": {
+              "question": "Who is credited with inventing the printing press?",
+              "options": ["Benjamin Franklin", "Thomas Edison", "Johannes Gutenberg", "Alexander Graham Bell"],
+              "answer": "Johannes Gutenberg"
+            },
+            "29": {
+              "question": "Which famous structure was built during the reign of Shah Jahan in India?",
+              "options": [ "Red Fort", "Qutub Minar", "Taj Mahal", "Charminar"],
+              "answer": "Taj Mahal"
+            },
+            "30": {
+              "question": "Which structure connects Europe and Asia in Turkey?",
+              "options": ["Golden Gate Bridge", "Bosphorus Bridge", "Brooklyn Bridge", "Akashi Kaikyō Bridge"],
+              "answer": "Bosphorus Bridge"
+            },
+            "31": {
+              "question": "Which explorer completed the first circumnavigation of the Earth?",
+              "options": ["Christopher Columbus", "Vasco da Gama", "Marco Polo", "Ferdinand Magellan"],
+              "answer": "Ferdinand Magellan"
+            },
+            "32": {
+              "question": "Which method is used to print something in Java?",
+              "options": ["System.out.println()", "print()", "console.log()", "write()"],
+              "answer": "System.out.println()"
+            },
+            "33": {
+              "question": "Which of these is a loop structure in Java?",
+              "options": ["if", "switch", "for", "case"],
+              "answer": "for"
+            }
+    },
+    "medium": {
+
+              "1": {
+                  "question": "Which planet is known as the 'Morning Star'?",
+                  "options": ["Mars", "Jupiter", "Venus", "Saturn"],
+                  "answer": "Venus"
+              },
+              "2": {
+                "question": "In what year did the United States land the first man on the Moon?",
+                "options": ["1958", "1972", "1965", "1969"],
+                "answer": "1969"
+              },
+              "3": {
+                "question": "What is the tallest mountain in the world?",
+                "options": ["K2", "Mount Everest", "Mount Kilimanjaro", "Mount McKinley"],
+                "answer": "Mount Everest"
+              },
+              "4": {
+                "question": "Which physicist developed the theory of general relativity?",
+                "options": ["Isaac Newton", "Galileo Galilei", "Albert Einstein", "Nikola Tesla"],
+                "answer": "Albert Einstein"
+              },
+              "5": {
+                "question": "What is the largest desert in the world?",
+                "options": ["Sahara", "Gobi", "Arabian", "Antarctic"],
+                "answer": "Antarctic"
+              },
+              "6": {
+                "question": "Who is the author of '1984'?",
+                "options": ["Aldous Huxley", "George Orwell", "Ernest Hemingway", "F. Scott Fitzgerald"],
+                "answer": "George Orwell"
+              },
+              "7": {
+                "question": "What is the largest mammal in the world?",
+                "options": ["Elephant", "Giraffe", "Hippopotamus", "Blue Whale"],
+                "answer": "Blue Whale"
+              },
+              "8": {
+                "question": "Which Austrian physicist is known for his thought experiment involving a cat?",
+                "options": [ "Max Planck", "Albert Einstein", "Erwin Schrödinger", "Niels Bohr"],
+                "answer": "Erwin Schrödinger"
+              },
+              "9": {
+                "question": "Which country was formerly known as Siam?",
+                "options": ["Thailand", "Vietnam", "Cambodia", "Laos"],
+                "answer": "Thailand"
+              },
+              "10": {
+                "question": "Which planet has the most moons?",
+                "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+                "answer": "Saturn"
+              },
+              "11": {
+                "question": "What is the chemical formula for table salt?",
+                "options": ["NaCl", "H2O", "CO2", "CH4"],
+                "answer": "NaCl"
+              },
+              "12": {
+                "question": "What is the name of the closest star to Earth?",
+                "options": ["Proxima Centauri", "Sirius", "Alpha Centauri", "Sun"],
+                "answer": "Sun"
+              },
+              "13": {
+                "question": "Which ocean is the deepest in the world?",
+                "options": ["Atlantic Ocean", "Pacific Ocean", "Indian Ocean", "Arctic Ocean"],
+                "answer": "Pacific Ocean"
+              },
+              "14": {
+                "question": "Who discovered gravity?",
+                "options": ["Galileo Galilei", "Albert Einstein", "Isaac Newton", "Johannes Kepler"],
+                "answer": "Isaac Newton"
+              },
+              "15": {
+                "question": "What is the largest island in the world?",
+                "options": [ "Australia", "Borneo", "Madagascar", "Greenland"],
+                "answer": "Greenland"
+              },
+              "16": {
+                "question": "Which chemical element is named after a planet?",
+                "options": ["Mercury", "Neptunium", "Plutonium", "Uranium"],
+                "answer": "Uranium"
+              },
+              "17": {
+                "question": "What is the smallest country in the world?",
+                "options": ["Monaco", "San Marino", "Vatican City", "Liechtenstein"],
+                "answer": "Vatican City"
+              },
+              "18": {
+                "question": "Which mountain range separates Europe and Asia?",
+                "options": ["Andes", "Alps", "Ural Mountains", "Himalayas"],
+                "answer": "Ural Mountains"
+              },
+              "19": {
+                "question": "What is the process by which plants make their own food?",
+                "options": ["Respiration", "Digestion", "Photosynthesis", "Transpiration"],
+                "answer": "Photosynthesis"
+              },
+              "20": {
+                "question": "Which country has the longest coastline in the world?",
+                "options": ["USA", "Russia", "Australia", "Canada"],
+                "answer": "Canada"
+              },
+              "21": {
+                "question": "What is the only metal that is liquid at room temperature?",
+                "options": ["Gallium", "Mercury", "Sodium", "Potassium"],
+                "answer": "Mercury"
+              },
+              "22": {
+                "question": "Which year was the Internet invented?",
+                "options": ["1983", "1975", "1991", "1969"],
+                "answer": "1983"
+              },
+              "23": {
+                "question": "Which film is considered the first feature-length animated movie?",
+                "options": ["Fantasia", "Snow White and the Seven Dwarfs", "Pinocchio", "Bambi"],
+                "answer": "Snow White and the Seven Dwarfs"
+              },
+              "24": {
+                "question": "Which game popularized the 'Battle Royale' genre?",
+                "options": ["Fortnite", "Apex Legends", "PUBG", "Call of Duty: Warzone"],
+                "answer": "PUBG"
+              },
+              "25": {
+                "question": "Which video game features the location 'Rapture'?",
+                "options": ["Fallout", "Doom", "BioShock", "Dishonored"],
+                "answer": "BioShock"
+              },
+              "26": {
+                "question": "What is the name of the monster in Mary Shelley’s 'Frankenstein'?",
+                "options": ["Victor", "The Creature", "Igor", "Hyde"],
+                "answer": "The Creature"
+              },
+              "27": {
+                "question": "Who wrote the novel 'One Hundred Years of Solitude'?",
+                "options": ["Jorge Luis Borges", "Mario Vargas Llosa", "Isabel Allende", "Gabriel Garcia Marquez"],
+                "answer": "Gabriel Garcia Marquez"
+              },
+              "28": {
+                "question": "Which famous sculpture is located in Florence's Galleria dell'Accademia?",
+                "options": ["Venus de Milo", "The Thinker", "David", "Pietà"],
+                "answer": "David"
+              },
+              "29": {
+                "question": "What was the name of the treaty that ended the Napoleonic Wars?",
+                "options": ["Treaty of Vienna", "Treaty of Paris", "Treaty of Ghent", "Treaty of Versailles"],
+                "answer": "Treaty of Vienna"
+              },
+              "30": {
+                "question": "Which ancient civilization built Machu Picchu?",
+                "options": ["Aztecs", "Mayans", "Incas", "Olmecs"],
+                "answer": "Incas"
+              },
+              "31": {
+                "question": "Which keyword is used to create an object in Java?",
+                "options": ["create", "new", "object", "instance"],
+                "answer": "new"
+              },
+              "32": {
+                "question": "What is the size of an int in Java?",
+                "options": ["2 bytes", "4 bytes", "8 bytes", "16 bytes"],
+                "answer": "4 bytes"
+              },
+              "33": {
+                "question": "What is the default value of an int variable in Java?",
+                "options": ["0", "null", "undefined", "1"],
+                "answer": "0"
+              }
+    },
+      "hard": {
+            "1": {
+              "question": "Who composed 'The Rite of Spring'?",
+              "options": [
+                "Igor Stravinsky",
+                "Ludwig van Beethoven",
+                "Wolfgang Amadeus Mozart",
+                "Pyotr Tchaikovsky"
+              ],
+              "answer": "Igor Stravinsky"
+            },
+            "2": {
+              "question": "Which physicist is known for his uncertainty principle?",
+              "options": [
+                "Albert Einstein",
+                "Niels Bohr",
+                "Werner Heisenberg",
+                "Max Planck"
+              ],
+              "answer": "Werner Heisenberg"
+            },
+            "3": {
+              "question": "What is the hardest natural substance on Earth?",
+              "options": [
+                "Corundum",
+                "Topaz",
+                "Quartz",
+                "Diamond"
+              ],
+              "answer": "Diamond"
+            },
+            "4": {
+              "question": "What is the SI unit of force?",
+              "options": [
+                "Joule",
+                "Pascal",
+                "Newton",
+                "Watt"
+              ],
+              "answer": "Newton"
+            },
+            "5": {
+              "question": "What is the scientific term for the study of fungi?",
+              "options": [
+                "Botany",
+                "Microbiology",
+                "Entomology",
+                "Mycology"
+              ],
+              "answer": "Mycology"
+            },
+            "6": {
+              "question": "Which city hosted the first modern Olympic Games?",
+              "options": [
+                "Paris",
+                "London",
+                "Athens",
+                "Rome"
+              ],
+              "answer": "Athens"
+            },
+            "7": {
+              "question": "What is the name of the ship that carried Charles Darwin on his voyage?",
+              "options": [
+                "HMS Beagle",
+                "HMS Endeavour",
+                "HMS Victory",
+                "HMS Discovery"
+              ],
+              "answer": "HMS Beagle"
+            },
+            "8": {
+              "question": "What is the capital of Liechtenstein?",
+              "options": [
+                "Bern",
+                "Vaduz",
+                "Innsbruck",
+                "Liechtenstein"
+              ],
+              "answer": "Vaduz"
+            },
+            "9": {
+              "question": "Which planet has the shortest day in the Solar System?",
+              "options": [
+                "Mercury",
+                "Venus",
+                "Neptune",
+                "Jupiter"
+              ],
+              "answer": "Jupiter"
+            },
+            "10": {
+              "question": "Which game studio developed 'The Last of Us'?",
+              "options": [
+                "Rockstar Games",
+                "Bethesda",
+                "Naughty Dog",
+                "BioWare"
+              ],
+              "answer": "Naughty Dog"
+            },
+            "11": {
+              "question": "Which game features a character named Solaire of Astora?",
+              "options": [
+                "Bloodborne",
+                "Dark Souls",
+                "Demon’s Souls",
+                "Elden Ring"
+              ],
+              "answer": "Dark Souls"
+            },
+            "12": {
+              "question": "Which art movement did Georges Seurat pioneer?",
+              "options": [
+                "Cubism",
+                "Surrealism",
+                "Pointillism",
+                "Impressionism"
+              ],
+              "answer": "Pointillism"
+            },
+            "13": {
+              "question": "What is the name of the famous Japanese painting featuring a wave?",
+              "options": [
+                "Cherry Blossom River",
+                "Blue Ocean",
+                "The Great Wave off Kanagawa",
+                "Rising Tide"
+              ],
+              "answer": "The Great Wave off Kanagawa"
+            },
+            "14": {
+              "question": "Which artist is known for the 'Campbell’s Soup Cans' artwork?",
+              "options": [
+                "Roy Lichtenstein",
+                "Jasper Johns",
+                "Jean-Michel Basquiat",
+                "Andy Warhol"
+              ],
+              "answer": "Andy Warhol"
+            },
+            "15": {
+              "question": "Which silent film actor is known for 'The Kid' and 'City Lights'?",
+              "options": [
+                "Buster Keaton",
+                "Harold Lloyd",
+                "Douglas Fairbanks",
+                "Charlie Chaplin"
+              ],
+              "answer": "Charlie Chaplin"
+            },
+            "16": {
+              "question": "Which movie won the first Academy Award for Best Animated Feature?",
+              "options": [
+                "Finding Nemo",
+                "Toy Story",
+                "Shrek",
+                "The Lion King"
+              ],
+              "answer": "Shrek"
+            },
+            "17": {
+              "question": "What is the rarest naturally occurring element on Earth?",
+              "options": [
+                "Francium",
+                "Astatine",
+                "Radium",
+                "Technetium"
+              ],
+              "answer": "Astatine"
+            },
+            "18": {
+              "question": "What is the name of the mathematical constant approximately equal to 2.718?",
+              "options": [
+                "Pi",
+                "Golden Ratio",
+                "Avogadro’s Number",
+                "Euler’s Number"
+              ],
+              "answer": "Euler’s Number"
+            },
+            "19": {
+              "question": "What is the name of the process by which DNA is copied?",
+              "options": [
+                "Translation",
+                "Transcription",
+                "Replication",
+                "Mutation"
+              ],
+              "answer": "Replication"
+            },
+            "20": {
+              "question": "What is the name of the smallest unit of matter that retains the properties of an element?",
+              "options": [
+                "Atom",
+                "Molecule",
+                "Proton",
+                "Electron"
+              ],
+              "answer": "Atom"
+            },
+            "21": {
+              "question": "Who is the author of 'The Iliad' and 'The Odyssey'?",
+              "options": [
+                "Hesiod",
+                "Virgil",
+                "Homer",
+                "Aeschylus"
+              ],
+              "answer": "Homer"
+            },
+            "22": {
+              "question": "Which dystopian novel features a language called Newspeak?",
+              "options": [
+                "Brave New World",
+                "We",
+                "The Handmaid’s Tale",
+                "1984"
+              ],
+              "answer": "1984"
+            },
+            "23": {
+              "language": "en",
+              "difficulty": "hard",
+              "question": "Who was the last emperor of the Western Roman Empire?",
+              "options": [
+                "Julius Caesar",
+                "Constantine XI",
+                "Romulus Augustulus",
+                "Nero"
+              ],
+              "answer": "Romulus Augustulus"
+            },
+            "24": {
+              "question": "Who was the first female pharaoh of Egypt?",
+              "options": [
+                "Cleopatra",
+                "Nefertiti",
+                "Hatshepsut",
+                "Sobekneferu"
+              ],
+              "answer": "Hatshepsut"
+            },
+            "25": {
+              "question": "What is the name of the first codified set of laws in history?",
+              "options": [
+                "Twelve Tables",
+                "Code of Hammurabi",
+                "Justinian Code",
+                "Magna Carta"
+              ],
+              "answer": "Code of Hammurabi"
+            },
+            "26": {
+              "question": "Which empire was centered in modern-day Turkey and lasted until 1922?",
+              "options": [
+                "Byzantine Empire",
+                "Safavid Empire",
+                "Ottoman Empire",
+                "Seljuk Empire"
+              ],
+              "answer": "Ottoman Empire"
+            },
+            "27": {
+              "question": "Which ancient civilization is known for the creation of ziggurats?",
+              "options": [
+                "Egyptians",
+                "Babylonians",
+                "Sumerians",
+                "Assyrians"
+              ],
+              "answer": "Sumerians"
+            },
+            "28": {
+              "question": "Which Austrian city is considered the birthplace of Wolfgang Amadeus Mozart?",
+              "options": [
+                "Salzburg",
+                "Vienna",
+                "Innsbruck",
+                "Graz"
+              ],
+              "answer": "Salzburg"
+            },
+            "29": {
+              "question": "What is the name of the famous Viennese coffee house culture that developed in the 19th century?",
+              "options": [
+                "Wiener Kaffeehaus",
+                "Wiener Salon",
+                "Kaffee Stil",
+                "Kaffeehauskultur"
+              ],
+              "answer": "Kaffeehauskultur"
+            },
+            "30": {
+              "question": "Which Austrian composer is known for his unfinished 'Symphony No. 8'?",
+              "options": [
+                "Wolfgang Amadeus Mozart",
+                "Joseph Haydn",
+                "Franz Schubert",
+                "Anton Bruckner"
+              ],
+              "answer": "Franz Schubert"
+            },
+            "31": {
+              "language": "en",
+              "difficulty": "hard",
+              "question": "Which Viennese artist is considered a pioneer of Expressionism?",
+              "options": [
+                "Gustav Klimt",
+                "Friedensreich Hundertwasser",
+                "Oskar Kokoschka",
+                "Egon Schiele"
+              ],
+              "answer": "Egon Schiele"
+            },
+            "32": {
+              "question": "What is the goal of the 'Unfreezing' phase in Lewin’s model of change?",
+              "options": [
+                "Implementing the planned changes",
+                "Stabilizing the new processes within the team",
+                "Preparing the team and addressing resistance to change",
+                "Returning to the previous state of operation"
+              ],
+              "answer": "Preparing the team and addressing resistance to change"
+            },
+            "33": {
+              "question": "According to the leadership styles discussed, what is the main focus of a transformational leadership approach?",
+              "options": [
+                "Managing tasks and processes efficiently",
+                "Inspiring and motivating team members through shared visions",
+                "Strictly enforcing rules and procedures",
+                "Ensuring fair punishment and rewards"
+              ],
+              "answer": "Inspiring and motivating team members through shared visions"
+            }
+    }
+  },
+  "de": {
+        "easy": {
+                "1": {
+                  "question": "Welcher Planet ist der kleinste im Sonnensystem?",
+                  "options": ["Venus", "Erde", "Merkur", "Mars"],
+                  "answer": "Merkur"
+                },
+                "2": {
+                  "question": "Wie heißt der berühmte Palast in Wien?",
+                  "options": ["Buckingham Palace", "Schloss Schönbrunn", "Versailles", "Alhambra"],
+                  "answer": "Schloss Schönbrunn"
+                },
+                "3": {
+                  "question": "Wie viele Kontinente gibt es auf der Welt?",
+                  "options": ["6", "5", "8", "7"],
+                  "answer": "7"
+                },
+                "4": {
+                  "question": "Wer malte 'Die Sternennacht'?",
+                  "options": ["Pablo Picasso", "Vincent van Gogh", "Claude Monet", "Leonardo da Vinci"],
+                  "answer": "Vincent van Gogh"
+                },
+                "5": {
+                  "question": "Wie heißt die nächste Galaxie zur Milchstraße?",
+                  "options": ["Andromeda", "Triangulum", "Whirlpool", "Sombrero"],
+                  "answer": "Andromeda"
+                },
+                "6": {
+                  "question": "Welches ist das bevölkerungsreichste Land der Welt?",
+                  "options": ["Indien", "USA", "China", "Russland"],
+                  "answer": "China"
+                },
+                "7": {
+                  "question": "Wer hat das Telefon erfunden?",
+                  "options": ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Guglielmo Marconi"],
+                  "answer": "Alexander Graham Bell"
+                },
+                "8": {
+                  "question": "Was ist das chemische Symbol für Natrium?",
+                  "options": ["S", "N", "Na", "Si"],
+                  "answer": "Na"
+                },
+                "9": {
+                  "question": "Wie heißt der römische Kriegsgott?",
+                  "options": ["Kratos", "Apollo", "Neptun", "Mars"],
+                  "answer": "Mars"
+                },
+                "10": {
+                  "question": "Welcher berühmte Wissenschaftler ist bekannt für seine Arbeit über die Bewegungsgesetze?",
+                  "options": ["Galileo Galilei", "Isaac Newton", "Albert Einstein", "Stephen Hawking"],
+                  "answer": "Isaac Newton"
+                },
+                "11": {
+                  "question": "Wie heißt der Prozess, bei dem Wasserdampf flüssig wird?",
+                  "options": ["Niederschlag", "Kondensation", "Sublimation"],
+                  "answer": "Kondensation"
+                },
+                "12": {
+                  "question": "Wie heißt das Raumschiff in Star Wars, das Han Solo steuert?",
+                  "options": ["Enterprise", "Millennium Falke", "Serenity", "Todesstern"],
+                  "answer": "Millennium Falke"
+                },
+                "13": {
+                  "question": "Wie heißt die Prinzessin, die Mario oft zu retten versucht?",
+                  "options": ["Prinzessin Daisy", "Rosalina", "Zelda", "Prinzessin Peach"],
+                  "answer": "Prinzessin Peach"
+                },
+                "14": {
+                  "question": "Wie heißt der animierte Film über Emotionen im Kopf eines Mädchens?",
+                  "options": ["Oben", "Coco", "Zoomania", "Alles steht Kopf"],
+                  "answer": "Alles steht Kopf"
+                },
+                "15": {
+                  "question": "Welcher Schauspieler spielte Iron Man im Marvel Cinematic Universe?",
+                  "options": ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo", "Chris Hemsworth"],
+                  "answer": "Robert Downey Jr."
+                },
+                "16": {
+                  "question": "In welchem Spiel bauen Spieler Strukturen und überleben gegen Kreaturen wie Creepers?",
+                  "options": ["Fortnite", "Minecraft", "Roblox", "Terraria"],
+                  "answer": "Minecraft"
+                },
+                "17": {
+                  "question": "Welche Kunstrichtung ist mit Pablo Picasso verbunden?",
+                  "options": ["Kubismus", "Impressionismus", "Surrealismus", "Barock"],
+                  "answer": "Kubismus"
+                },
+                "18": {
+                  "question": "Wie heißt der KI-Antagonist in 'The Matrix'?",
+                  "options": ["HAL 9000", "Ultron", "Skynet", "Agent Smith"],
+                  "answer": "Agent Smith"
+                },
+                "19": {
+                  "question": "Wie heißt das Raumschiff im Film 'Alien'?",
+                  "options": ["Enterprise", "Serenity", "Nostromo", "Discovery"],
+                  "answer": "Nostromo"
+                },
+                "20": {
+                  "question": "Welches Tier ist das Symbol des World Wildlife Fund (WWF)?",
+                  "options": ["Panda", "Tiger", "Elefant", "Delfin"],
+                  "answer": "Panda"
+                },
+                "21": {
+                  "question": "Welches Land schenkte der USA die Freiheitsstatue?",
+                  "options": ["Italien", "Spanien", "Deutschland", "Frankreich"],
+                  "answer": "Frankreich"
+                },
+                "22": {
+                  "question": "Wie heißt das alte ägyptische Schriftsystem?",
+                  "options": ["Keilschrift", "Alphabet", "Hieroglyphen", "Piktogramme"],
+                  "answer": "Hieroglyphen"
+                },
+                "23": {
+                  "question": "Welches Land war früher als Persien bekannt?",
+                  "options": ["Irak", "Iran", "Ägypten", "Türkei"],
+                  "answer": "Iran"
+                },
+                "24": {
+                  "question": "Wie heißt die berühmte Handelsroute, die Europa und Asien verband?",
+                  "options": ["Gewürzstraße", "Teestraße", "Seidenstraße", "Bernsteinstraße"],
+                  "answer": "Seidenstraße"
+                },
+                "25": {
+                  "question": "Wer entdeckte Penicillin?",
+                  "options": ["Marie Curie", "Louis Pasteur", "Alexander Fleming", "Gregor Mendel"],
+                  "answer": "Alexander Fleming"
+                },
+                "26": {
+                  "question": "Welche alte Zivilisation ist bekannt für die Erfindung des Rades?",
+                  "options": ["Ägypter", "Griechen", "Mesopotamier", "Chinesen"],
+                  "answer": "Mesopotamier"
+                },
+                "27": {
+                  "question": "Welcher berühmte Wissenschaftler schlug das heliozentrische Modell des Sonnensystems vor?",
+                  "options": ["Galileo Galilei", "Isaac Newton", "Johannes Kepler", "Nikolaus Kopernikus"],
+                  "answer": "Nikolaus Kopernikus"
+                },
+                "28": {
+                  "question": "Wer wird für die Erfindung der Druckpresse verantwortlich gemacht?",
+                  "options": ["Benjamin Franklin", "Thomas Edison", "Johannes Gutenberg", "Alexander Graham Bell"],
+                  "answer": "Johannes Gutenberg"
+                },
+                "29": {
+                  "question": "Welches berühmte Bauwerk wurde während der Herrschaft von Shah Jahan in Indien erbaut?",
+                  "options": ["Rotes Fort", "Qutub Minar", "Taj Mahal", "Charminar"],
+                  "answer": "Taj Mahal"
+                },
+                "30": {
+                  "question": "Welche Brücke verbindet Europa und Asien in der Türkei?",
+                  "options": ["Golden Gate Bridge", "Bosporus-Brücke", "Brooklyn Bridge", "Akashi-Kaikyō-Brücke"],
+                  "answer": "Bosporus-Brücke"
+                },
+                "31": {
+                  "question": "Welcher Entdecker vollendete die erste Weltumsegelung?",
+                  "options": ["Christoph Kolumbus", "Vasco da Gama", "Marco Polo", "Ferdinand Magellan"],
+                  "answer": "Ferdinand Magellan"
+                },
+                "32": {
+                  "question": "Welche Methode wird verwendet, um etwas in Java auszugeben?",
+                  "options": ["System.out.println()", "print()", "console.log()", "write()"],
+                  "answer": "System.out.println()"
+                },
+                "33": {
+                  "question": "Welche dieser Strukturen ist eine Schleife in Java?",
+                  "options": ["if", "switch", "for", "case"],
+                  "answer": "for"
+                }
+        },
+
+        "medium": {
+
+                "1": {
+                  "question": "Welcher Planet ist als 'Morgenstern' bekannt?",
+                  "options": ["Mars", "Jupiter", "Venus", "Saturn"],
+                  "answer": "Venus"
+                },
+                "2": {
+                  "question": "In welchem Jahr landeten die Vereinigten Staaten den ersten Menschen auf dem Mond?",
+                  "options": ["1958", "1972", "1965", "1969"],
+                  "answer": "1969"
+                },
+                "3": {
+                  "question": "Was ist der höchste Berg der Welt?",
+                  "options": ["K2", "Mount Everest", "Mount Kilimanjaro", "Mount McKinley"],
+                  "answer": "Mount Everest"
+                },
+                "4": {
+                  "question": "Welcher Physiker entwickelte die allgemeine Relativitätstheorie?",
+                  "options": ["Isaac Newton", "Galileo Galilei", "Albert Einstein", "Nikola Tesla"],
+                  "answer": "Albert Einstein"
+                },
+                "5": {
+                  "question": "Was ist die größte Wüste der Welt?",
+                  "options": ["Sahara", "Gobi", "Arabische Wüste", "Antarktis"],
+                  "answer": "Antarktis"
+                },
+                "6": {
+                  "question": "Wer ist der Autor von '1984'?",
+                  "options": ["Aldous Huxley", "George Orwell", "Ernest Hemingway", "F. Scott Fitzgerald"],
+                  "answer": "George Orwell"
+                },
+                "7": {
+                  "question": "Was ist das größte Säugetier der Welt?",
+                  "options": ["Elefant", "Giraffe", "Nilpferd", "Blauwal"],
+                  "answer": "Blauwal"
+                },
+                "8": {
+                  "question": "Welcher österreichische Physiker ist für sein Gedankenexperiment mit einer Katze bekannt?",
+                  "options": ["Max Planck", "Albert Einstein", "Erwin Schrödinger", "Niels Bohr"],
+                  "answer": "Erwin Schrödinger"
+                },
+                "9": {
+                  "question": "Welches Land war früher als Siam bekannt?",
+                  "options": ["Thailand", "Vietnam", "Kambodscha", "Laos"],
+                  "answer": "Thailand"
+                },
+                "10": {
+                  "question": "Welcher Planet hat die meisten Monde?",
+                  "options": ["Jupiter", "Saturn", "Uranus", "Neptun"],
+                  "answer": "Saturn"
+                },
+                "11": {
+                  "question": "Was ist die chemische Formel für Kochsalz?",
+                  "options": ["NaCl", "H2O", "CO2", "CH4"],
+                  "answer": "NaCl"
+                },
+                "12": {
+                  "question": "Wie heißt der nächstgelegene Stern zur Erde?",
+                  "options": ["Proxima Centauri", "Sirius", "Alpha Centauri", "Sonne"],
+                  "answer": "Sonne"
+                },
+                "13": {
+                  "question": "Welcher Ozean ist der tiefste der Welt?",
+                  "options": ["Atlantischer Ozean", "Pazifischer Ozean", "Indischer Ozean", "Arktischer Ozean"],
+                  "answer": "Pazifischer Ozean"
+                },
+                "14": {
+                  "question": "Wer entdeckte die Schwerkraft?",
+                  "options": ["Galileo Galilei", "Albert Einstein", "Isaac Newton", "Johannes Kepler"],
+                  "answer": "Isaac Newton"
+                },
+                "15": {
+                  "question": "Was ist die größte Insel der Welt?",
+                  "options": ["Australien", "Borneo", "Madagaskar", "Grönland"],
+                  "answer": "Grönland"
+                },
+                "16": {
+                  "question": "Welches chemische Element ist nach einem Planeten benannt?",
+                  "options": ["Quecksilber", "Neptunium", "Plutonium", "Uran"],
+                  "answer": "Uran"
+                },
+                "17": {
+                  "question": "Was ist das kleinste Land der Welt?",
+                  "options": ["Monaco", "San Marino", "Vatikanstadt", "Liechtenstein"],
+                  "answer": "Vatikanstadt"
+                },
+                "18": {
+                  "question": "Welche Gebirgskette trennt Europa und Asien?",
+                  "options": ["Anden", "Alpen", "Uralgebirge", "Himalaya"],
+                  "answer": "Uralgebirge"
+                },
+                "19": {
+                  "question": "Wie nennt man den Prozess, durch den Pflanzen ihre eigene Nahrung herstellen?",
+                  "options": ["Atmung", "Verdauung", "Photosynthese", "Transpiration"],
+                  "answer": "Photosynthese"
+                },
+                "20": {
+                  "question": "Welches Land hat die längste Küstenlinie der Welt?",
+                  "options": ["USA", "Russland", "Australien", "Kanada"],
+                  "answer": "Kanada"
+                },
+                "21": {
+                  "question": "Welches Metall ist bei Raumtemperatur flüssig?",
+                  "options": ["Gallium", "Quecksilber", "Natrium", "Kalium"],
+                  "answer": "Quecksilber"
+                },
+                "22": {
+                  "question": "In welchem Jahr wurde das Internet erfunden?",
+                  "options": ["1983", "1975", "1991", "1969"],
+                  "answer": "1983"
+                },
+                "23": {
+                  "question": "Welcher Film gilt als der erste abendfüllende Animationsfilm?",
+                  "options": ["Fantasia", "Schneewittchen und die sieben Zwerge", "Pinocchio", "Bambi"],
+                  "answer": "Schneewittchen und die sieben Zwerge"
+                },
+                "24": {
+                  "question": "Welches Spiel machte das 'Battle Royale'-Genre populär?",
+                  "options": ["Fortnite", "Apex Legends", "PUBG", "Call of Duty: Warzone"],
+                  "answer": "PUBG"
+                },
+                "25": {
+                  "question": "In welchem Videospiel gibt es den Ort 'Rapture'?",
+                  "options": ["Fallout", "Doom", "BioShock", "Dishonored"],
+                  "answer": "BioShock"
+                },
+                "26": {
+                  "question": "Wie heißt das Monster in Mary Shelleys 'Frankenstein'?",
+                  "options": ["Victor", "Die Kreatur", "Igor", "Hyde"],
+                  "answer": "Die Kreatur"
+                },
+                "27": {
+                  "question": "Wer schrieb den Roman 'Hundert Jahre Einsamkeit'?",
+                  "options": ["Jorge Luis Borges", "Mario Vargas Llosa", "Isabel Allende", "Gabriel Garcia Marquez"],
+                  "answer": "Gabriel Garcia Marquez"
+                },
+                "28": {
+                  "question": "Welche berühmte Skulptur befindet sich in der Galleria dell'Accademia in Florenz?",
+                  "options": ["Venus von Milo", "Der Denker", "David", "Pietà"],
+                  "answer": "David"
+                },
+                "29": {
+                  "question": "Wie heißt der Vertrag, der die Napoleonischen Kriege beendete?",
+                  "options": ["Wiener Vertrag", "Vertrag von Paris", "Vertrag von Gent", "Vertrag von Versailles"],
+                  "answer": "Wiener Vertrag"
+                },
+                "30": {
+                  "question": "Welche antike Zivilisation baute Machu Picchu?",
+                  "options": ["Azteken", "Maya", "Inka", "Olmeken"],
+                  "answer": "Inka"
+                },
+                "31": {
+                  "question": "Welches Schlüsselwort wird in Java verwendet, um ein Objekt zu erstellen?",
+                  "options": ["create", "new", "object", "instance"],
+                  "answer": "new"
+                },
+                "32": {
+                  "question": "Wie groß ist ein int in Java?",
+                  "options": ["2 Bytes", "4 Bytes", "8 Bytes", "16 Bytes"],
+                  "answer": "4 Bytes"
+                },
+                "33": {
+                  "question": "Was ist der Standardwert einer int-Variable in Java?",
+                  "options": ["0", "null", "undefined", "1"],
+                  "answer": "0"
+                }
+        },
+        "hard": {
+
+              "1": {
+                "question": "Wer komponierte 'Le Sacre du printemps'?",
+                "options": [
+                  "Igor Strawinsky",
+                  "Ludwig van Beethoven",
+                  "Wolfgang Amadeus Mozart",
+                  "Pjotr Tschaikowski"
+                ],
+                "answer": "Igor Strawinsky"
+              },
+              "2": {
+                "question": "Welcher Physiker ist für sein Unsicherheitsprinzip bekannt?",
+                "options": [
+                  "Albert Einstein",
+                  "Niels Bohr",
+                  "Werner Heisenberg",
+                  "Max Planck"
+                ],
+                "answer": "Werner Heisenberg"
+              },
+              "3": {
+                "question": "Was ist die härteste natürliche Substanz der Erde?",
+                "options": [
+                  "Korund",
+                  "Topas",
+                  "Quarz",
+                  "Diamant"
+                ],
+                "answer": "Diamant"
+              },
+              "4": {
+                "question": "Was ist die SI-Einheit der Kraft?",
+                "options": [
+                  "Joule",
+                  "Pascal",
+                  "Newton",
+                  "Watt"
+                ],
+                "answer": "Newton"
+              },
+              "5": {
+                "question": "Wie lautet der wissenschaftliche Begriff für die Pilzkunde?",
+                "options": [
+                  "Botanik",
+                  "Mikrobiologie",
+                  "Entomologie",
+                  "Mykologie"
+                ],
+                "answer": "Mykologie"
+              },
+              "6": {
+                "question": "Welche Stadt war Gastgeber der ersten modernen Olympischen Spiele?",
+                "options": [
+                  "Paris",
+                  "London",
+                  "Athen",
+                  "Rom"
+                ],
+                "answer": "Athen"
+              },
+              "7": {
+                "question": "Wie heißt das Schiff, mit dem Charles Darwin seine Reise unternahm?",
+                "options": [
+                  "HMS Beagle",
+                  "HMS Endeavour",
+                  "HMS Victory",
+                  "HMS Discovery"
+                ],
+                "answer": "HMS Beagle"
+              },
+              "8": {
+                "question": "Wie heißt die Hauptstadt von Liechtenstein?",
+                "options": [
+                  "Bern",
+                  "Vaduz",
+                  "Innsbruck",
+                  "Liechtenstein"
+                ],
+                "answer": "Vaduz"
+              },
+              "9": {
+                "question": "Welcher Planet hat den kürzesten Tag im Sonnensystem?",
+                "options": [
+                  "Merkur",
+                  "Venus",
+                  "Neptun",
+                  "Jupiter"
+                ],
+                "answer": "Jupiter"
+              },
+              "10": {
+                "question": "Welches Spielstudio entwickelte 'The Last of Us'?",
+                "options": [
+                  "Rockstar Games",
+                  "Bethesda",
+                  "Naughty Dog",
+                  "BioWare"
+                ],
+                "answer": "Naughty Dog"
+              },
+              "11": {
+                "question": "In welchem Spiel gibt es einen Charakter namens Solaire von Astora?",
+                "options": [
+                  "Bloodborne",
+                  "Dark Souls",
+                  "Demon’s Souls",
+                  "Elden Ring"
+                ],
+                "answer": "Dark Souls"
+              },
+              "12": {
+                "question": "Welche Kunstrichtung wurde von Georges Seurat geprägt?",
+                "options": [
+                  "Kubismus",
+                  "Surrealismus",
+                  "Pointillismus",
+                  "Impressionismus"
+                ],
+                "answer": "Pointillismus"
+              },
+              "13": {
+                "question": "Wie heißt das berühmte japanische Gemälde mit einer Welle?",
+                "options": [
+                  "Kirschblütenfluss",
+                  "Blauer Ozean",
+                  "Die große Welle vor Kanagawa",
+                  "Steigende Flut"
+                ],
+                "answer": "Die große Welle vor Kanagawa"
+              },
+              "14": {
+                "question": "Welcher Künstler ist für das Kunstwerk 'Campbell’s Soup Cans' bekannt?",
+                "options": [
+                  "Roy Lichtenstein",
+                  "Jasper Johns",
+                  "Jean-Michel Basquiat",
+                  "Andy Warhol"
+                ],
+                "answer": "Andy Warhol"
+              },
+              "15": {
+                "question": "Welcher Stummfilmschauspieler ist für 'The Kid' und 'City Lights' bekannt?",
+                "options": [
+                  "Buster Keaton",
+                  "Harold Lloyd",
+                  "Douglas Fairbanks",
+                  "Charlie Chaplin"
+                ],
+                "answer": "Charlie Chaplin"
+              },
+              "16": {
+                "question": "Welcher Film gewann den ersten Academy Award für den besten Animationsfilm?",
+                "options": [
+                  "Findet Nemo",
+                  "Toy Story",
+                  "Shrek",
+                  "Der König der Löwen"
+                ],
+                "answer": "Shrek"
+              },
+              "17": {
+                "question": "Welches ist das seltenste natürlich vorkommende Element auf der Erde?",
+                "options": [
+                  "Francium",
+                  "Astat",
+                  "Radium",
+                  "Technetium"
+                ],
+                "answer": "Astat"
+              },
+              "18": {
+                "question": "Wie heißt die mathematische Konstante, die ungefähr 2,718 entspricht?",
+                "options": [
+                  "Pi",
+                  "Goldener Schnitt",
+                  "Avogadro-Zahl",
+                  "Eulersche Zahl"
+                ],
+                "answer": "Eulersche Zahl"
+              },
+              "19": {
+                "question": "Wie heißt der Prozess, durch den DNA kopiert wird?",
+                "options": [
+                  "Translation",
+                  "Transkription",
+                  "Replikation",
+                  "Mutation"
+                ],
+                "answer": "Replikation"
+              },
+              "20": {
+                "question": "Wie nennt man die kleinste Einheit der Materie, die die Eigenschaften eines Elements beibehält?",
+                "options": [
+                  "Atom",
+                  "Molekül",
+                  "Proton",
+                  "Elektron"
+                ],
+                "answer": "Atom"
+              },
+              "21": {
+                "question": "Wer ist der Autor von 'Die Ilias' und 'Die Odyssee'?",
+                "options": [
+                  "Hesiod",
+                  "Vergil",
+                  "Homer",
+                  "Aischylos"
+                ],
+                "answer": "Homer"
+              },
+              "22": {
+                "question": "In welchem dystopischen Roman gibt es eine Sprache namens Neusprech?",
+                "options": [
+                  "Schöne neue Welt",
+                  "Wir",
+                  "Der Report der Magd",
+                  "1984"
+                ],
+                "answer": "1984"
+              },
+              "23": {
+                "question": "Wer war der letzte Kaiser des Weströmischen Reiches?",
+                "options": [
+                  "Julius Caesar",
+                  "Konstantin XI.",
+                  "Romulus Augustulus",
+                  "Nero"
+                ],
+                "answer": "Romulus Augustulus"
+              },
+              "24": {
+                "question": "Wer war die erste weibliche Pharaonin Ägyptens?",
+                "options": [
+                  "Kleopatra",
+                  "Nofretete",
+                  "Hatschepsut",
+                  "Sobekneferu"
+                ],
+                "answer": "Hatschepsut"
+              },
+              "25": {
+                "question": "Wie heißt das erste kodifizierte Gesetzbuch der Geschichte?",
+                "options": [
+                  "Zwölftafelgesetz",
+                  "Gesetzbuch von Hammurabi",
+                  "Justinianischer Codex",
+                  "Magna Carta"
+                ],
+                "answer": "Gesetzbuch von Hammurabi"
+              },
+              "26": {
+                "question": "Welches Reich hatte seinen Sitz im heutigen Türkei und bestand bis 1922?",
+                "options": [
+                  "Byzantinisches Reich",
+                  "Safawidenreich",
+                  "Osmanisches Reich",
+                  "Seldschukenreich"
+                ],
+                "answer": "Osmanisches Reich"
+              },
+              "27": {
+                "question": "Welche antike Zivilisation ist für die Errichtung von Zikkurats bekannt?",
+                "options": [
+                  "Ägypter",
+                  "Babylonier",
+                  "Sumerer",
+                  "Assyrer"
+                ],
+                "answer": "Sumerer"
+              },
+              "28": {
+                "question": "Welche österreichische Stadt gilt als Geburtsort von Wolfgang Amadeus Mozart?",
+                "options": [
+                  "Salzburg",
+                  "Wien",
+                  "Innsbruck",
+                  "Graz"
+                ],
+                "answer": "Salzburg"
+              },
+              "29": {
+                "question": "Wie heißt die berühmte Wiener Kaffeehauskultur, die sich im 19. Jahrhundert entwickelte?",
+                "options": [
+                  "Wiener Kaffeehaus",
+                  "Wiener Salon",
+                  "Kaffee Stil",
+                  "Kaffeehauskultur"
+                ],
+                "answer": "Kaffeehauskultur"
+              },
+              "30": {
+                "question": "Welcher österreichische Komponist ist für seine unvollendete 'Symphonie Nr. 8' bekannt?",
+                "options": [
+                  "Wolfgang Amadeus Mozart",
+                  "Joseph Haydn",
+                  "Franz Schubert",
+                  "Anton Bruckner"
+                ],
+                "answer": "Franz Schubert"
+              },
+              "31": {
+                "question": "Welcher Wiener Künstler gilt als ein Pionier des Expressionismus?",
+                "options": [
+                  "Gustav Klimt",
+                  "Friedensreich Hundertwasser",
+                  "Oskar Kokoschka",
+                  "Egon Schiele"
+                ],
+                "answer": "Egon Schiele"
+              },
+              "32": {
+                "question": "Was ist das Ziel der 'Auftauen'-Phase im Lewin-Modell für Veränderungen?",
+                "options": [
+                  "Die geplanten Veränderungen umsetzen",
+                  "Die neuen Prozesse im Team stabilisieren",
+                  "Das Team vorbereiten und Widerstände gegen Veränderungen adressieren",
+                  "Zum vorherigen Betriebszustand zurückkehren"
+                ],
+                "answer": "Das Team vorbereiten und Widerstände gegen Veränderungen adressieren"
+              },
+              "33": {
+                "question": "Was ist der Hauptfokus eines transformatorischen Führungsstils?",
+                "options": [
+                  "Aufgaben und Prozesse effizient managen",
+                  "Teammitglieder durch gemeinsame Visionen inspirieren und motivieren",
+                  "Regeln und Verfahren strikt durchsetzen",
+                  "Fairness bei Bestrafungen und Belohnungen sicherstellen"
+                ],
+                "answer": "Teammitglieder durch gemeinsame Visionen inspirieren und motivieren"
+              }
+        }
+  }
+}

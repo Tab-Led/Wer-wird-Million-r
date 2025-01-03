@@ -1,0 +1,48 @@
+.highlighted {
+    -fx-background-color: rgba(255, 165, 0, 0.5); /* Оранжевый цвет с прозрачностью 50% */
+    -fx-text-fill: black; /* Цвет текста */
+    -fx-font-size: 18px; /* Размер шрифта */
+    -fx-font-weight: bold; /* Жирный текст */
+    -fx-padding: 5 10 5 10; /* Внутренние отступы */
+    -fx-border-color: black; /* Цвет рамки */
+    -fx-border-width: 2; /* Толщина рамки */
+    -fx-border-radius: 10; /* Скругление углов */
+}
+
+#level-box {
+    -fx-background-image: url("background.gif");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover; /* Масштабируем на весь размер */
+    -fx-padding: 3;
+    -fx-spacing: 3; /* Интервал между метками */
+}
+
+
+#level-box {
+    -fx-border-color: yellow; /* Цвет рамки */
+    -fx-border-width: 5;     /* Толщина рамки */
+    -fx-border-radius: 5;    /* Скругление углов */
+     -fx-alignment: center; /* Выравнивание всех элементов в VBox */
+}
+
+
+.label {
+    -fx-font-size: 13px;
+    -fx-text-fill: orange;
+    -fx-alignment: center; /* Текст выравнивается по центру */
+        -fx-text-alignment: center; /* Выравнивание текста внутри Label */
+        -fx-alignment: center; /* Центрирование текста */
+}
+
+.text-area {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-control-inner-background: #000066; /* Темно-синий фон */
+    -fx-padding: 10;
+}
+
+
+
+
+
