@@ -27,4 +27,53 @@ public class GameService {
         this.gameState = new GameState();
         this.questions = QuestionLoader.loadQuestionsByParams(filePath, gameState.getLanguage(), lvl);
     }
+
+    public String processAnswer(String answer, int index) {
+        boolean isCorrect = checkAnswer(answer, index);
+        if (isCorrect) {
+            System.out.println("Correct answer!");
+            gameState.setCurrentLevel(gameState.getCurrentLevel() + 1);
+
+            if (gameState.getCurrentLevel() > 14) {
+                this.gameState = new GameState();
+                return "win";
+            } else {
+                questions.remove(index);
+                setLvl();
+                if (gameState.getCurrentLevel() == 5){
+                    setQuestions();
+                } else if (gameState.getCurrentLevel() == 11) {
+                    setQuestions();
+                }
+                return "next";
+            }
+        } else {
+            this.gameState = new GameState();
+            setLvl();
+            return "lose";
+        }
+    }
+
+    public boolean checkAnswer(String answer, int index) {
+        return answer.equals(questions.get(index).getCorrectAnswer());
+    }
+
+    public List<Question> getQuestions() {
+        return questions;
+    }
+
+    public void setQuestions() {
+        setLvl();
+        this.questions = QuestionLoader.loadQuestionsByParams(filePath, gameState.getLanguage(), lvl);
+    }
+
+    public GameState getGameState() {
+        return gameState;
+    }
+
+    public void setLvl() {
+        if(gameState.getCurrentLevel() < 5) lvl = "easy";
+        else if (gameState.getCurrentLevel() > 10) lvl = "hard";
+        else lvl = "medium";
+    }
 }
