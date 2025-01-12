@@ -1,13 +1,18 @@
 package com.tabled.millioner.controller;
 
+import com.tabled.millioner.MainApplication;
 import com.tabled.millioner.models.Question;
 import com.tabled.millioner.services.GameService;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.*;
 
 
@@ -44,13 +49,11 @@ public class Controller {
     public Label label_1;
 
     @FXML
-    private Button start;
+    private Button exit;
     @FXML
     public Button fifty;
     @FXML
     public Button joker;
-    @FXML
-    private Button language;
     @FXML
     private Button a;
     @FXML
@@ -70,20 +73,27 @@ public class Controller {
     public void initialize() {
         // todo by default is "en" -> GameState to change
         gameService = new GameService();
-        setButtonsDisabled(true);
+        setButtonsDisabled(false);
+        setQuestion();
+    }
 
-        question.setText(
-                "Herzlich Willkommen zu unserer Version von 'Wer wird Millionär?!'\n" +
-                        "Liebe Teilnehmerinnen und Teilnehmer, heute seid ihr die Stars dieses spannenden Quizspiels.\n" +
-                        "Stellt euer Wissen, eure Intuition und euren Mut unter Beweis und kämpft euch durch die 15 Fragen, um den ultimativen Hauptgewinn von 1 Million Euro zu erreichen!\n\n" +
-                        "Vergesst nicht:\n" +
-                        "- Jede richtige Antwort bringt euch eine Stufe höher.\n" +
-                        "- Ihr habt zwei Joker: 50:50 und den 100% richtige Antwort Joker. Setzt sie klug ein!\n" +
-                        "Seid ihr bereit, in die heiße Quizrunde einzutauchen und euch der Herausforderung zu stellen?\n" +
-                        "Dann lasst uns keine Zeit verlieren und starten wir das Spiel.\n" +
-                        "Viel Erfolg, viel Spaß und möge der Beste gewinnen!"
-        );
+    public GameService getGameService() {
+        return gameService;
+    }
 
+    @FXML
+    protected void onExitButtonClick() {
+        try {
+            // Загружаем стартовую страницу
+            FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("start.fxml"));
+            Scene startScene = new Scene(fxmlLoader.load(), 1200, 800);
+
+            // Получаем текущее окно и устанавливаем стартовую страницу
+            Stage stage = (Stage) exit.getScene().getWindow();
+            stage.setScene(startScene);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
@@ -108,14 +118,6 @@ public class Controller {
     protected void onDButtonClick() throws NoSuchFieldException, IllegalAccessException {
         String answer = gameService.processAnswer(d.getText(), randomIndex);
         handleAnswerResult(answer);
-    }
-
-    @FXML
-    protected void onStartButtonClick() throws NoSuchFieldException, IllegalAccessException {
-        setQuestion();
-        setButtonsDisabled(false);
-        highlightLevel(gameService.getGameState().getCurrentLevel());
-
     }
 
     @FXML
@@ -168,20 +170,6 @@ public class Controller {
 
     }
 
-    @FXML
-    protected void onSpracheButtonClick() {
-        if (language.getText().equals("sprache - de")) {
-            language.setText("sprache - en");
-            gameService.getGameState().setLanguage("en");
-            gameService.setQuestions();
-        } else {
-            language.setText("sprache - de");
-            gameService.getGameState().setLanguage("de");
-            gameService.setQuestions();
-        }
-        System.out.println("Sprache button pushed: " + language.getText() + " set" );
-    }
-
     private void setQuestion(){
         System.out.println("gameService.getQuestions().size(): -> " + gameService.getQuestions().size());
         int size = gameService.getQuestions().size();
@@ -212,13 +200,13 @@ public class Controller {
                 // todo Make animation and sounds?
                 setButtonsDisabled(true);
                 highlightLevel(gameService.getGameState().getCurrentLevel());
-                showAlert("WIN", "WIN", "Congrats!!! you won 1kk€");
+                showAlert("WIN", "WIN", "Congratulations!!! You won 1.000.000€");
                 break;
             case "lose":
                 System.out.println("Game over!");
                 // todo Make animation and sounds?
                 setButtonsDisabled(true);
-                showAlert("Lose", "Lose", "tut mir Leid, du hast надо тут сумму написать ");
+                showAlert("Lose", "Lose", "Sorry, you have lost надо тут сумму написать ");
                 break;
             case "next":
                 System.out.println("Next question...");
@@ -239,8 +227,6 @@ public class Controller {
         fifty.setDisable(disabled);
         joker.setDisable(disabled);
         // convert
-        start.setDisable(!disabled);
-        language.setDisable(!disabled);
     }
 
     private void enableAllButtons(boolean enabled) {
@@ -250,6 +236,14 @@ public class Controller {
         d.setDisable(enabled);
         fifty.setDisable(gameService.getGameState().isFiftyUsed());
         joker.setDisable(gameService.getGameState().isJokerUsed());
+    }
+
+    public void setLanguage(String language) {
+        gameService.getGameState().setLanguage(language); // Устанавливаем язык
+        gameService.setQuestions(); // Перезагружаем вопросы
+        setButtonsDisabled(false); // Делаем кнопки активными
+        setQuestion(); // Загружаем первый вопрос
+        System.out.println("Language set to: " + language);
     }
 
     // css for level
