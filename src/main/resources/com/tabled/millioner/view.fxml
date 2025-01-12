@@ -8,9 +8,10 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
 <GridPane minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #00008B;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tabled.millioner.controller.Controller">
    <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="0.0" prefWidth="50.0" />
@@ -32,28 +33,32 @@
    <children>
       <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.rowSpan="2">
          <children>
-            <Button fx:id="start" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
-                    onAction="#onStartButtonClick" prefWidth="200.0" text="Start">
+            <Button fx:id="exit" mnemonicParsing="false" onAction="#onExitButtonClick" prefWidth="200.0" text="Exit">
                <VBox.margin>
                   <Insets left="20.0" top="20.0" />
-               </VBox.margin></Button>
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
             <Button fx:id="fifty" mnemonicParsing="false" onAction="#on50ButtonClick" prefWidth="200.0" text="50:50">
                <VBox.margin>
                   <Insets left="20.0" top="20.0" />
-               </VBox.margin></Button>
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
             <Button fx:id="joker" mnemonicParsing="false" onAction="#onJokerButtonClick" prefWidth="200.0" text="Joker">
                <VBox.margin>
                   <Insets left="20.0" top="20.0" />
-               </VBox.margin></Button>
-            <Button mnemonicParsing="false" fx:id="language" onAction="#onSpracheButtonClick"
-                    prefWidth="200.0" text="sprache - de">
-               <VBox.margin>
-                  <Insets left="20.0" top="20.0" />
-               </VBox.margin></Button>
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
          </children>
       </VBox>
 
-      <StackPane prefWidth="200.0" prefHeight="600.0" stylesheets="@css/style.css" GridPane.columnIndex="4" GridPane.rowIndex="1" GridPane.rowSpan="2">
+      <StackPane prefHeight="600.0" prefWidth="200.0" stylesheets="@css/style.css" GridPane.columnIndex="4" GridPane.rowIndex="1" GridPane.rowSpan="2">
          <children>
             <!-- VBox для списка уровней -->
             <VBox id="level-box">
@@ -82,7 +87,10 @@
       <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="3">
          <children>
 
-            <TextArea fx:id="question" styleClass="text-area" wrapText="true" prefHeight="200.0" prefWidth="1100.0" />
+            <TextArea fx:id="question" prefHeight="200.0" prefWidth="1100.0" styleClass="text-area" wrapText="true">
+               <font>
+                  <Font size="24.0" />
+               </font></TextArea>
 
          </children>
       </HBox>
@@ -90,31 +98,38 @@
 
       <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="4">
          <children>
-            <Button fx:id="a" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
-                    onAction="#onAButtonClick" prefHeight="50.0" prefWidth="500.0" text="A">
+            <Button fx:id="a" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onAButtonClick" prefHeight="50.0" prefWidth="500.0" text="A">
                <HBox.margin>
                   <Insets left="20.0" right="50.0" top="20.0" />
-               </HBox.margin></Button>
-            <Button fx:id="b" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
-                    onAction="#onBButtonClick" prefHeight="50.0" prefWidth="500.0" text="B">
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="b" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onBButtonClick" prefHeight="50.0" prefWidth="500.0" text="B">
                <HBox.margin>
                   <Insets left="20.0" right="50.0" top="20.0" />
-               </HBox.margin></Button>
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
          </children>
       </HBox>
-      <HBox layoutX="60.0" layoutY="563.0" prefHeight="100.0" prefWidth="200.0"
-            GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="5">
+      <HBox layoutX="60.0" layoutY="563.0" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="5">
          <children>
-            <Button fx:id="c" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
-                    onAction="#onCButtonClick" prefHeight="50.0" prefWidth="500.0" text="C">
+            <Button fx:id="c" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCButtonClick" prefHeight="50.0" prefWidth="500.0" text="C">
                <HBox.margin>
                   <Insets left="20.0" right="50.0" top="20.0" />
-               </HBox.margin></Button>
-            <Button fx:id="d" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
-                    onAction="#onDButtonClick" prefHeight="50.0" prefWidth="500.0" text="D">
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="d" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onDButtonClick" prefHeight="50.0" prefWidth="500.0" text="D">
                <HBox.margin>
                   <Insets left="20.0" right="50.0" top="20.0" />
-               </HBox.margin></Button>
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
          </children>
       </HBox>
    </children>

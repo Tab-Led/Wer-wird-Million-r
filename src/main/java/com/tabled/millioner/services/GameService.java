@@ -26,6 +26,7 @@ public class GameService {
         }
         this.gameState = new GameState();
         this.questions = QuestionLoader.loadQuestionsByParams(filePath, gameState.getLanguage(), lvl);
+        System.out.println("Questions loaded for language: " + gameState.getLanguage());
     }
 
     public String processAnswer(String answer, int index) {
@@ -65,6 +66,8 @@ public class GameService {
     public void setQuestions() {
         setLvl();
         this.questions = QuestionLoader.loadQuestionsByParams(filePath, gameState.getLanguage(), lvl);
+        System.out.println("Questions reloaded for language: " + gameState.getLanguage() + ", difficulty: " + lvl);
+        System.out.println("Number of questions loaded: " + questions.size());
     }
 
     public GameState getGameState() {
@@ -76,4 +79,5 @@ public class GameService {
         else if (gameState.getCurrentLevel() > 10) lvl = "hard";
         else lvl = "medium";
     }
+
 }
