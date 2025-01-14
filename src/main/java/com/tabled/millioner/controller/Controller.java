@@ -55,6 +55,8 @@ public class Controller {
     @FXML
     public Button joker;
     @FXML
+    public Button secondChance;
+    @FXML
     private Button a;
     @FXML
     private Button b;
@@ -98,26 +100,22 @@ public class Controller {
 
     @FXML
     protected void onAButtonClick() throws NoSuchFieldException, IllegalAccessException {
-        String answer = gameService.processAnswer(a.getText(), randomIndex);
-        handleAnswerResult(answer);
+        handleAnswer(a.getText());
     }
 
     @FXML
     protected void onBButtonClick() throws NoSuchFieldException, IllegalAccessException {
-        String answer = gameService.processAnswer(b.getText(), randomIndex);
-        handleAnswerResult(answer);
+        handleAnswer(b.getText());
     }
 
     @FXML
     protected void onCButtonClick() throws NoSuchFieldException, IllegalAccessException {
-        String answer = gameService.processAnswer(c.getText(), randomIndex);
-        handleAnswerResult(answer);
+        handleAnswer(c.getText());
     }
 
     @FXML
     protected void onDButtonClick() throws NoSuchFieldException, IllegalAccessException {
-        String answer = gameService.processAnswer(d.getText(), randomIndex);
-        handleAnswerResult(answer);
+        handleAnswer(d.getText());
     }
 
     @FXML
@@ -150,7 +148,7 @@ public class Controller {
         for (int i = 0; i < 2; i++) {
             wrongButtons.get(i).setDisable(true); // Делаем кнопку неактивной
         }
-        System.out.println("50:50 применено!");
+        System.out.println("50:50 was activated!");
     }
 
 
@@ -169,6 +167,35 @@ public class Controller {
         d.setText(correctAnswer);
 
     }
+
+
+    @FXML
+    protected void onSecondChanceButtonClick() {
+        if (gameService.getGameState().isSecondChanceUsed()) {
+            showAlert("Second Chance Used", "You have already used the Second Chance lifeline.", "");
+            return;
+        }
+
+        gameService.getGameState().setSecondChanceUsed(true);
+        gameService.getGameState().setSecondChanceActive(true);
+        showAlert("Second Chance Activated", "You now have a second chance if you answer incorrectly!", "");
+    }
+
+    private void handleAnswer(String selectedAnswer) throws NoSuchFieldException, IllegalAccessException {
+        String result = gameService.processAnswer(selectedAnswer, randomIndex);
+
+        // Если игрок дал неправильный ответ, но Second Chance активен
+        if (result.equals("tryAgain")) {
+            showAlert("Second Chance",
+                    "Your first answer was incorrect!",
+                    "But you have a second chance. Please choose another answer.");
+            return; // Завершаем обработку, чтобы дать игроку возможность ответить снова
+        }
+
+        // Обрабатываем другие результаты (win, lose, next)
+        handleAnswerResult(result);
+    }
+
 
     private void setQuestion(){
         System.out.println("gameService.getQuestions().size(): -> " + gameService.getQuestions().size());
@@ -226,6 +253,7 @@ public class Controller {
         question.setDisable(disabled);
         fifty.setDisable(disabled);
         joker.setDisable(disabled);
+        secondChance.setDisable(disabled);
         // convert
     }
 
@@ -236,6 +264,7 @@ public class Controller {
         d.setDisable(enabled);
         fifty.setDisable(gameService.getGameState().isFiftyUsed());
         joker.setDisable(gameService.getGameState().isJokerUsed());
+        secondChance.setDisable(gameService.getGameState().isSecondChanceUsed());
     }
 
     public void setLanguage(String language) {
