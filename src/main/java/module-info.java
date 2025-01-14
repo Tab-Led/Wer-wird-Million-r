@@ -6,6 +6,7 @@ module com.tabled.millioner {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires com.google.gson;
+    requires org.apache.logging.log4j;
 
     opens com.tabled.millioner to javafx.fxml;
     exports com.tabled.millioner;
