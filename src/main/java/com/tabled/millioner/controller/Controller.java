@@ -11,6 +11,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 import java.io.IOException;
 import java.util.*;
@@ -71,9 +74,13 @@ public class Controller {
     private int randomIndex;
     Random random = new Random();
 
+    private static final Logger logger = LogManager.getLogger(Controller.class);
+
+
     @FXML
     public void initialize() {
         // todo by default is "en" -> GameState to change
+        logger.info("Initializing the Controller...");
         gameService = new GameService();
         setButtonsDisabled(false);
         setQuestion();
@@ -87,6 +94,7 @@ public class Controller {
     protected void onExitButtonClick() {
         try {
             // Загружаем стартовую страницу
+            logger.info("Exit button clicked. Returning to the start screen.");
             FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("start.fxml"));
             Scene startScene = new Scene(fxmlLoader.load(), 1200, 800);
 
@@ -95,26 +103,31 @@ public class Controller {
             stage.setScene(startScene);
         } catch (IOException e) {
             e.printStackTrace();
+            logger.error("Error while loading the start screen", e);
         }
     }
 
     @FXML
     protected void onAButtonClick() throws NoSuchFieldException, IllegalAccessException {
+        logger.debug("Button A clicked with answer: {}", a.getText());
         handleAnswer(a.getText());
     }
 
     @FXML
     protected void onBButtonClick() throws NoSuchFieldException, IllegalAccessException {
+        logger.debug("Button B clicked with answer: {}", b.getText());
         handleAnswer(b.getText());
     }
 
     @FXML
     protected void onCButtonClick() throws NoSuchFieldException, IllegalAccessException {
+        logger.debug("Button C clicked with answer: {}", c.getText());
         handleAnswer(c.getText());
     }
 
     @FXML
     protected void onDButtonClick() throws NoSuchFieldException, IllegalAccessException {
+        logger.debug("Button D clicked with answer: {}", d.getText());
         handleAnswer(d.getText());
     }
 
@@ -122,12 +135,14 @@ public class Controller {
     protected void on50ButtonClick() {
         // Проверяем, использована ли функция ранее
         if (gameService.getGameState().isFiftyUsed()) {
+            logger.warn("50:50 lifeline was already used.");
             showAlert("used", "used", "used");
             System.out.println("50:50 used!");
             return;
         }
 
         // Отмечаем, что 50:50 используется
+        logger.info("Activating 50:50 lifeline.");
         gameService.getGameState().setFiftyUsed(true);
 
         // Получаем правильный ответ для текущего вопроса
@@ -148,6 +163,7 @@ public class Controller {
         for (int i = 0; i < 2; i++) {
             wrongButtons.get(i).setDisable(true); // Делаем кнопку неактивной
         }
+        logger.debug("50:50 activated. Disabled two incorrect answers.");
         System.out.println("50:50 was activated!");
     }
 
@@ -155,12 +171,17 @@ public class Controller {
     @FXML
     protected void onJokerButtonClick() {
         if (gameService.getGameState().isJokerUsed()) {
+            logger.warn("Joker lifeline was already used.");
             showAlert("used", "used", "Joker is already used");
             System.out.println("used!");
             return;
         }
+
+        logger.info("Activating Joker lifeline.");
+
         gameService.getGameState().setJokerUsed(true);
         String correctAnswer = gameService.getQuestions().get(randomIndex).getCorrectAnswer();
+        logger.debug("Correct answer for Joker lifeline: {}", correctAnswer);
         a.setText(correctAnswer);
         b.setText(correctAnswer);
         c.setText(correctAnswer);
@@ -172,20 +193,25 @@ public class Controller {
     @FXML
     protected void onSecondChanceButtonClick() {
         if (gameService.getGameState().isSecondChanceUsed()) {
+            logger.warn("Second Chance lifeline was already used.");
             showAlert("Second Chance Used", "You have already used the Second Chance lifeline.", "");
             return;
         }
 
+        logger.info("Activating Second Chance lifeline.");
         gameService.getGameState().setSecondChanceUsed(true);
         gameService.getGameState().setSecondChanceActive(true);
         showAlert("Second Chance Activated", "You now have a second chance if you answer incorrectly!", "");
+        logger.info("Second Chance lifeline activated.");
     }
 
     private void handleAnswer(String selectedAnswer) throws NoSuchFieldException, IllegalAccessException {
+        logger.info("Processing answer: {}", selectedAnswer);
         String result = gameService.processAnswer(selectedAnswer, randomIndex);
 
         // Если игрок дал неправильный ответ, но Second Chance активен
         if (result.equals("tryAgain")) {
+            logger.warn("First answer was incorrect, but Second Chance is active.");
             showAlert("Second Chance",
                     "Your first answer was incorrect!",
                     "But you have a second chance. Please choose another answer.");
@@ -198,9 +224,11 @@ public class Controller {
 
 
     private void setQuestion(){
+        logger.info("Setting a new question.");
         System.out.println("gameService.getQuestions().size(): -> " + gameService.getQuestions().size());
         int size = gameService.getQuestions().size();
         randomIndex = random.nextInt(size);
+        logger.debug("Selected random index for question: {}", randomIndex);
         System.out.println("random index: " + randomIndex);
         // get random question
         if (!gameService.getQuestions().isEmpty()) {
@@ -208,6 +236,7 @@ public class Controller {
             updateUIWithQuestion(question);
         } else {
             question.setText("No questions available!");
+            logger.error("No questions available to display!");
         }
     }
 
@@ -223,6 +252,7 @@ public class Controller {
         switch (result) {
             case "win":
                 // Показать экран победы
+                logger.info("Player won the game!");
                 System.out.println("Congratulations, you won!");
                 // todo Make animation and sounds?
                 setButtonsDisabled(true);
@@ -230,22 +260,27 @@ public class Controller {
                 showAlert("WIN", "WIN", "Congratulations!!! You won 1.000.000€");
                 break;
             case "lose":
+                logger.error("Player lost the game.");
                 System.out.println("Game over!");
                 // todo Make animation and sounds?
                 setButtonsDisabled(true);
                 showAlert("Lose", "Lose", "Sorry, you have lost надо тут сумму написать ");
                 break;
             case "next":
+                logger.info("Loading the next question.");
                 System.out.println("Next question...");
                 highlightLevel(gameService.getGameState().getCurrentLevel());
                 // todo Make animation and sounds?
                 setQuestion();
                 enableAllButtons(false);
                 break;
+            default:
+                logger.warn("Unknown result state: {}", result);
         }
     }
 
     private void setButtonsDisabled(boolean disabled) {
+        logger.debug("Buttons state changed: disabled={}", disabled);
         a.setDisable(disabled);
         b.setDisable(disabled);
         c.setDisable(disabled);
@@ -265,6 +300,11 @@ public class Controller {
         fifty.setDisable(gameService.getGameState().isFiftyUsed());
         joker.setDisable(gameService.getGameState().isJokerUsed());
         secondChance.setDisable(gameService.getGameState().isSecondChanceUsed());
+        logger.debug("All buttons enabled={}. Fifty used={}, Joker used={}, Second Chance used={}",
+                !enabled,
+                gameService.getGameState().isFiftyUsed(),
+                gameService.getGameState().isJokerUsed(),
+                gameService.getGameState().isSecondChanceUsed());
     }
 
     public void setLanguage(String language) {
@@ -272,6 +312,8 @@ public class Controller {
         gameService.setQuestions(); // Перезагружаем вопросы
         setButtonsDisabled(false); // Делаем кнопки активными
         setQuestion(); // Загружаем первый вопрос
+        logger.info("Language set to: {}", language);
+        logger.debug("Questions reloaded for language: {}", language);
         System.out.println("Language set to: " + language);
     }
 
@@ -281,6 +323,7 @@ public class Controller {
         for (int i = 1; i <= 15; i++) {
             Label label = (Label) getClass().getDeclaredField("label_" + i).get(this);
             label.getStyleClass().remove("highlighted");
+            logger.debug("Highlighting level: {}", level);
         }
         // add color
         Label currentLabel = (Label) getClass().getDeclaredField("label_" + level).get(this);
