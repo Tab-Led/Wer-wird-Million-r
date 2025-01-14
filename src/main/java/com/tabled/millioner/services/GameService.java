@@ -7,6 +7,7 @@ import java.io.File;
 import java.net.URL;
 import java.util.List;
 
+
 public class GameService {
     private List<Question> questions;
     private GameState gameState;
@@ -46,10 +47,28 @@ public class GameService {
                 } else if (gameState.getCurrentLevel() == 11) {
                     setQuestions();
                 }
+                gameState.setSecondChanceActive(false);
                 return "next";
             }
         } else {
-            this.gameState = new GameState();
+            // Если активирован Second Chance
+            if (gameState.isSecondChanceActive()) {
+                System.out.println("Second Chance in use!");
+                gameState.setSecondChanceActive(false); // Сбрасываем активное состояние
+                gameState.setSecondChanceUsed(true);    // Отмечаем, что шанс использован
+                return "tryAgain";
+            }
+
+            // Если Second Chance ещё доступен, активируем его
+            if (!gameState.isSecondChanceUsed()) {
+                System.out.println("Activating Second Chance...");
+                gameState.setSecondChanceActive(true); // Активируем второй шанс
+                return "tryAgain";
+            }
+
+            // Если Second Chance уже использован, игрок проигрывает
+            System.out.println("Game over!");
+            this.gameState = new GameState(); // Перезапуск состояния игры
             setLvl();
             return "lose";
         }
