@@ -249,33 +249,39 @@ public class Controller {
     }
 
     private void handleAnswerResult(String result) throws NoSuchFieldException, IllegalAccessException {
-        switch (result) {
-            case "win":
-                // Показать экран победы
-                logger.info("Player won the game!");
-                System.out.println("Congratulations, you won!");
-                // todo Make animation and sounds?
-                setButtonsDisabled(true);
-                highlightLevel(gameService.getGameState().getCurrentLevel());
-                showAlert("WIN", "WIN", "Congratulations!!! You won 1.000.000€");
-                break;
-            case "lose":
-                logger.error("Player lost the game.");
-                System.out.println("Game over!");
-                // todo Make animation and sounds?
-                setButtonsDisabled(true);
-                showAlert("Lose", "Lose", "Sorry, you have lost надо тут сумму написать ");
-                break;
-            case "next":
-                logger.info("Loading the next question.");
-                System.out.println("Next question...");
-                highlightLevel(gameService.getGameState().getCurrentLevel());
-                // todo Make animation and sounds?
-                setQuestion();
-                enableAllButtons(false);
-                break;
-            default:
-                logger.warn("Unknown result state: {}", result);
+        if (result.startsWith("lose")) {
+            logger.error("Player lost the game.");
+            setButtonsDisabled(true);
+
+            // Получаем сохраненное значение safeAmount
+            int safeAmount = Integer.parseInt(result.split(":")[1]);
+            logger.info("Displaying safe amount: {}€", safeAmount);
+
+            // Отображаем всплывающее окно с информацией
+            showAlert("Lose", "Game Over", "Sorry, you lost. Your safe amount is " + safeAmount + "€.");
+
+        } else {
+            switch (result) {
+                case "win":
+                    // Показать экран победы
+                    logger.info("Player won the game!");
+                    System.out.println("Congratulations, you won!");
+                    // todo Make animation and sounds?
+                    setButtonsDisabled(true);
+                    highlightLevel(gameService.getGameState().getCurrentLevel());
+                    showAlert("WIN", "WIN", "Congratulations!!! You won 1.000.000€");
+                    break;
+                case "next":
+                    logger.info("Loading the next question.");
+                    System.out.println("Next question...");
+                    highlightLevel(gameService.getGameState().getCurrentLevel());
+                    // todo Make animation and sounds?
+                    setQuestion();
+                    enableAllButtons(false);
+                    break;
+                default:
+                    logger.warn("Unknown result state: {}", result);
+            }
         }
     }
 
@@ -317,6 +323,19 @@ public class Controller {
         System.out.println("Language set to: " + language);
     }
 
+    private void updateSafeAmountUI() throws NoSuchFieldException, IllegalAccessException {
+        int safeAmount = gameService.getGameState().getSafeAmount();
+        for (int i = 1; i <= 15; i++) {
+            Label label = (Label) getClass().getDeclaredField("label_" + i).get(this);
+            if (i == 5 || i == 10) {
+                label.getStyleClass().add("safe-amount"); // Добавить CSS-стиль для выделения
+            } else {
+                label.getStyleClass().remove("safe-amount"); // Удалить стиль, если он есть
+            }
+        }
+        logger.debug("Safe amount UI updated.");
+    }
+
     // css for level
     public void highlightLevel(int level) throws NoSuchFieldException, IllegalAccessException {
         // remove color
@@ -331,6 +350,7 @@ public class Controller {
     }
 
     public void showAlert(String title, String textHeader, String text) {
+        logger.debug("Showing alert with title: {}, header: {}, content: {}", title, textHeader, text);
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(title);
         alert.setHeaderText(textHeader);
