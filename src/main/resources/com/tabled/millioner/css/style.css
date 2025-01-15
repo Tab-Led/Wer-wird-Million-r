@@ -50,6 +50,14 @@
     -fx-alignment: center;
 }
 
+.exit-button {
+    -fx-background-color: #ff6666; /* Красный фон */
+    -fx-text-fill: white;         /* Белый текст */
+    -fx-font-size: 14px;          /* Размер шрифта */
+    -fx-border-radius: 5px;       /* Радиус закругления */
+    -fx-background-radius: 5px;   /* Радиус фона */
+}
+
 /* Заголовок */
 .title-label {
     -fx-font-size: 48px; /* Увеличенный шрифт */

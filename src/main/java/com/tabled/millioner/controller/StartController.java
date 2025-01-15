@@ -26,6 +26,8 @@ public class StartController {
     private Button btnDeutsch;
     @FXML
     private Button btnStart;
+    @FXML
+    private Button btnExit;
 
     private String selectedLanguage = "en"; // Язык по умолчанию
 
@@ -54,6 +56,12 @@ public class StartController {
             } catch (IOException e) {
                 logger.error("Failed to start game: {}", e.getMessage(), e);
             }
+        });
+
+        // Обработчик для кнопки Exit
+        btnExit.setOnAction(event -> {
+            logger.info("Exit button clicked. Exiting application.");
+            System.exit(0); // Закрытие приложения
         });
     }
 
