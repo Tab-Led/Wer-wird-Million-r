@@ -23,18 +23,21 @@
 }
 
 .label {
-    -fx-font-size: 13px;
-    -fx-text-fill: orange;
-    -fx-alignment: center;
-    -fx-text-alignment: center;
+    -fx-font-size: 16px; /* Увеличиваем шрифт */
+    -fx-font-family: "Arial"; /* Оставляем удобный шрифт */
+    -fx-text-fill: yellow; /* Цвет текста */
 }
 
-.text-area {
-    -fx-font-family: "Arial";
-    -fx-font-size: 14px;
-    -fx-text-fill: white;
-    -fx-control-inner-background: #000066;
-    -fx-padding: 10;
+.safe-amount {
+    -fx-font-size: 18px; /* Ещё больше для выделенных сумм */
+    -fx-font-weight: bold; /* Жирный текст */
+    -fx-text-fill: white; /* Белый текст для контраста */
+}
+
+.highlighted {
+    -fx-font-size: 16px; /* Максимальный размер для текущего уровня */
+    -fx-text-fill: orange; /* Цвет выделения */
+    -fx-font-weight: bold; /* Жирный шрифт */
 }
 
 /* Задний фон для стартовой страницы */

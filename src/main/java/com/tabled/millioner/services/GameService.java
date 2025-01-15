@@ -45,6 +45,14 @@ public class GameService {
             gameState.setCurrentLevel(gameState.getCurrentLevel() + 1);
             logger.info("Current level updated to: {}", gameState.getCurrentLevel());
 
+            if (gameState.getCurrentLevel() == 6) {
+                gameState.setSafeAmount(500);
+                logger.info("Safe amount updated to 500€ at level 6.");
+            } else if (gameState.getCurrentLevel() == 11) {
+                gameState.setSafeAmount(16000);
+                logger.info("Safe amount updated to 16,000€ at level 11.");
+            }
+
             if (gameState.getCurrentLevel() > 14) {
                 logger.info("Player won the game!");
                 this.gameState = new GameState();
@@ -60,6 +68,7 @@ public class GameService {
                 gameState.setSecondChanceActive(false);
                 return "next";
             }
+
         } else {
             // Проверяем, активирована ли подсказка "Second Chance"
             if (gameState.isSecondChanceActive()) {
@@ -68,8 +77,11 @@ public class GameService {
                 return "tryAgain";
             }
 
-            // Если подсказка "Second Chance" не активирована
-            return "lose";
+            int safeAmount = gameState.getSafeAmount();
+            logger.info("Player lost. Safe amount: {}€", safeAmount);
+            this.gameState = new GameState();
+            setLvl();
+            return "lose:" + safeAmount;
         }
     }
 

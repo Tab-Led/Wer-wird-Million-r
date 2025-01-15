@@ -53,7 +53,7 @@
             },
             "11": {
               "question": "What is the name of the process by which water vapor becomes liquid?",
-              "options": ["Precipitation", "Condensation", "Sublimation"],
+              "options": ["Precipitation", "Condensation", "Sublimation", "Deprivation"],
               "answer": "Condensation"
             },
             "12": {
@@ -726,7 +726,7 @@
                 },
                 "11": {
                   "question": "Wie heißt der Prozess, bei dem Wasserdampf flüssig wird?",
-                  "options": ["Niederschlag", "Kondensation", "Sublimation"],
+                  "options": ["Niederschlag", "Kondensation", "Sublimation", "Deprivation"],
                   "answer": "Kondensation"
                 },
                 "12": {

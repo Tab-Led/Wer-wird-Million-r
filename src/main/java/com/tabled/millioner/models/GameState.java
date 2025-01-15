@@ -7,6 +7,7 @@ public class GameState {
     private boolean isSecondChanceUsed;
     private boolean isSecondChanceActive;
     private String language = "en";
+    private int safeAmount;
 
     public GameState() {
         this.currentLevel = 1;
@@ -14,6 +15,7 @@ public class GameState {
         this.isJokerUsed = false;
         this.isSecondChanceUsed = false;
         this.isSecondChanceActive = false;
+        this.safeAmount = 0;
     }
 
     public int getCurrentLevel() {
@@ -58,5 +60,26 @@ public class GameState {
 
     public void setSecondChanceActive(boolean secondChanceActive) {
         isSecondChanceActive = secondChanceActive;
+    }
+
+    public int getSafeAmount() {
+        return safeAmount;
+    }
+
+    public void setSafeAmount(int safeAmount) {
+        this.safeAmount = safeAmount;
+    }
+
+    @Override
+    public String toString() {
+        return "GameState{" +
+                "currentLevel=" + currentLevel +
+                ", isFiftyUsed=" + isFiftyUsed +
+                ", isJokerUsed=" + isJokerUsed +
+                ", isSecondChanceUsed=" + isSecondChanceUsed +
+                ", isSecondChanceActive=" + isSecondChanceActive +
+                ", language='" + language + '\'' +
+                ", safeAmount=" + safeAmount +
+                '}';
     }
 }
