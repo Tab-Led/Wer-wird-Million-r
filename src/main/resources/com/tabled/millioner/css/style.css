@@ -103,4 +103,11 @@
     -fx-background-color: #104E8B; /* Тёмно-синий цвет при нажатии */
 }
 
+.rules-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
 

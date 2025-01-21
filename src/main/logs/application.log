@@ -11272,3 +11272,8 @@
 2025-01-21 13:33:07 [INFO ] com.tabled.millioner.controller.StartController - Rules button clicked. Displaying game rules.
 2025-01-21 13:33:16 [INFO ] com.tabled.millioner.controller.StartController - Rules displayed successfully.
 2025-01-21 13:33:18 [INFO ] com.tabled.millioner.controller.StartController - Exit button clicked. Exiting application.
+2025-01-21 14:06:12 [INFO ] com.tabled.millioner.controller.StartController - Initializing StartController...
+2025-01-21 14:06:12 [INFO ] com.tabled.millioner.controller.StartController - Logo successfully loaded.
+2025-01-21 14:06:21 [INFO ] com.tabled.millioner.controller.StartController - Rules button clicked. Displaying game rules.
+2025-01-21 14:06:23 [INFO ] com.tabled.millioner.controller.StartController - Rules displayed successfully.
+2025-01-21 14:06:25 [INFO ] com.tabled.millioner.controller.StartController - Exit button clicked. Exiting application.
