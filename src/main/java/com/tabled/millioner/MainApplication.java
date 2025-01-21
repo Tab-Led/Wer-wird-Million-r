@@ -10,7 +10,6 @@ import java.io.IOException;
 public class MainApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        // Загружаем стартовую страницу
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("/com/tabled/millioner/start.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1200, 800);
         stage.setTitle("Who Wants To Be A Millionaire");

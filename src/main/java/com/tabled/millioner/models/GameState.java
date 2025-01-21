@@ -1,6 +1,20 @@
 package com.tabled.millioner.models;
 
 public class GameState {
+    /**
+     * Represents the state of the game in "Who Wants to Be a Millionaire".
+     *
+     * This class maintains the current progress of the game, the status of lifelines,
+     * the selected language, and the player's current and safe amounts.
+     * It is used to track and update the game state as the player progresses through levels.
+     *
+     * Key Features:
+     * - Tracks the player's current level.
+     * - Stores the usage status of lifelines (50:50, Joker, Second Chance).
+     * - Keeps track of whether the "Second Chance" lifeline is active.
+     * - Manages the selected language for the game.
+     * - Maintains the current safe amount, which the player retains after losing.
+     */
     private int currentLevel;
     private boolean isFiftyUsed;
     private boolean isJokerUsed;
