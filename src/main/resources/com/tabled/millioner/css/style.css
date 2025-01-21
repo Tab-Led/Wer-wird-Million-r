@@ -40,6 +40,27 @@
     -fx-font-weight: bold; /* Жирный шрифт */
 }
 
+.restart-button {
+    -fx-background-color: #1E90FF; /* Голубой фон */
+    -fx-text-fill: white; /* Белый текст */
+    -fx-font-size: 16px; /* Размер шрифта */
+    -fx-font-weight: bold; /* Жирный текст */
+    -fx-border-color: #4682B4; /* Синяя рамка */
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10 20;
+}
+
+.restart-button:hover {
+    -fx-background-color: #5A9FD4; /* Светло-голубой фон при наведении */
+    -fx-cursor: hand;
+}
+
+.restart-button:pressed {
+    -fx-background-color: #104E8B; /* Темно-синий фон при нажатии */
+}
+
 /* Задний фон для стартовой страницы */
 .start-page {
     -fx-background-image: url("../images/startbackgroung.jpg"); /* Путь к изображению */

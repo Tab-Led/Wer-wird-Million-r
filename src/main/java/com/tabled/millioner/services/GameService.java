@@ -114,4 +114,9 @@ public class GameService {
         else lvl = "medium";logger.info("Difficulty level set to: {}", lvl);
     }
 
+    public void resetGameState() {
+        this.gameState = new GameState(); // Создаем новое состояние игры
+        setQuestions(); // Загружаем вопросы заново
+    }
+
 }
