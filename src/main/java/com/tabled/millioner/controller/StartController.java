@@ -2,6 +2,7 @@ package com.tabled.millioner.controller;
 
 import com.tabled.millioner.MainApplication;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -28,6 +29,8 @@ public class StartController {
     private Button btnStart;
     @FXML
     private Button btnExit;
+    @FXML
+    private Button btnRules;
 
     private String selectedLanguage = "en"; // Язык по умолчанию
 
@@ -57,6 +60,7 @@ public class StartController {
         btnDeutsch.setDisable(false);
         btnStart.setDisable(false);
         btnExit.setDisable(false);
+        btnRules.setDisable(false);
     }
 
     // Button handlers
@@ -87,6 +91,32 @@ public class StartController {
     protected void onExitButtonClick() {
         logger.info("Exit button clicked. Exiting application.");
         System.exit(0);
+    }
+
+    @FXML
+    protected void onRulesButtonClick() {
+        logger.info("Rules button clicked. Displaying game rules.");
+
+        // Создание всплывающего окна
+        Alert rulesAlert = new Alert(Alert.AlertType.INFORMATION);
+        rulesAlert.setTitle("Game Rules");
+        rulesAlert.setHeaderText("Rules of the Game");
+        rulesAlert.setContentText(
+                """
+                Welcome to "Who Wants to Be a Millionaire"!
+                - Answer 15 questions correctly to win the grand prize of 1,000,000€.
+                - Use three hints to assist you:
+                  * 50:50 – Eliminates two incorrect answers.
+                  * Joker – Repeats the correct answer multiple times.
+                  * Second Chance – Gives you a second chance to answer if you’re wrong.
+                - If you lose, you'll take home the last safe amount you reached.
+                Good luck and have fun!
+                """
+        );
+
+        // Показать окно
+        rulesAlert.showAndWait();
+        logger.info("Rules displayed successfully.");
     }
 
     private void startGame() throws IOException {
