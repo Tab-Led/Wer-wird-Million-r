@@ -68,6 +68,8 @@ public class Controller {
     @FXML
     private Button d;
     @FXML
+    private Button btnRestart;
+    @FXML
     private TextArea question;
 
     private GameService gameService;
@@ -203,6 +205,19 @@ public class Controller {
         gameService.getGameState().setSecondChanceActive(true);
         showAlert("Second Chance Activated", "You now have a second chance if you answer incorrectly!", "");
         logger.info("Second Chance lifeline activated.");
+    }
+
+    @FXML
+    protected void onRestartButtonClick() {
+        logger.info("Restart button clicked. Restarting the game.");
+
+        // Сброс состояния игры
+        gameService.resetGameState();
+        setButtonsDisabled(false); // Включаем кнопки
+        setQuestion(); // Устанавливаем первый вопрос
+        enableAllButtons(false); // Убедитесь, что кнопки активны
+
+        logger.debug("Game successfully restarted.");
     }
 
     private void handleAnswer(String selectedAnswer) throws NoSuchFieldException, IllegalAccessException {
