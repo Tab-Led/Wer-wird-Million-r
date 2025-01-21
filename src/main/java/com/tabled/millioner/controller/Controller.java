@@ -109,7 +109,6 @@ public class Controller {
          * and replacing the current scene with the start screen.
          */
         try {
-            // Загружаем стартовую страницу
             logger.info("Exit button clicked. Returning to the start screen.");
             FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("start.fxml"));
             Scene startScene = new Scene(fxmlLoader.load(), 1200, 800);
@@ -187,7 +186,6 @@ public class Controller {
          * only one incorrect answer and the correct answer active.
          * If the lifeline has already been used, displays an alert to inform the user.
          */
-        // Проверяем, использована ли функция ранее
         if (gameService.getGameState().isFiftyUsed()) {
             logger.warn("50:50 lifeline was already used.");
             showAlert("used", "used", "used");
@@ -197,12 +195,10 @@ public class Controller {
 
         logger.info("Activating 50:50 lifeline.");
         gameService.getGameState().setFiftyUsed(true);
-
         String correctAnswer = gameService.getQuestions().get(randomIndex).getCorrectAnswer();
-
         List<Button> answerButtons = Arrays.asList(a, b, c, d);
-
         List<Button> wrongButtons = new ArrayList<>();
+
         for (Button button : answerButtons) {
             if (!button.getText().equals(correctAnswer)) {
                 wrongButtons.add(button);
@@ -213,13 +209,25 @@ public class Controller {
             wrongButtons.get(i).setDisable(true);
         }
         logger.debug("50:50 activated. Disabled two incorrect answers.");
-        System.out.println("50:50 was activated!");
     }
 
 
     @FXML
     protected void onJokerButtonClick() {
-
+        /**
+         * Handles the "Joker" lifeline button click event.
+         *
+         * This lifeline repeats the correct answer across all answer buttons (A, B, C, and D).
+         * It ensures that the player cannot make an incorrect selection. If the Joker lifeline
+         * has already been used, it displays an alert notifying the player.
+         *
+         * Steps:
+         * 1. Check if the Joker lifeline has already been used.
+         * 2. If not used, activate the lifeline by:
+         *    - Marking it as used in the game state.
+         *    - Replacing the text on all answer buttons with the correct answer.
+         * 3. Log all relevant actions and outcomes.
+         */
         if (gameService.getGameState().isJokerUsed()) {
             logger.warn("Joker lifeline was already used.");
             showAlert("used", "used", "Joker is already used");
@@ -241,6 +249,21 @@ public class Controller {
 
     @FXML
     protected void onSecondChanceButtonClick() {
+        /**
+         * Handles the "Second Chance" lifeline button click event.
+         *
+         * This lifeline allows the player to retry if they select an incorrect answer.
+         * Once activated, it marks the lifeline as used and enables the second chance feature.
+         * If the lifeline has already been used, it displays an alert notifying the player.
+         *
+         * Steps:
+         * 1. Check if the Second Chance lifeline has already been used.
+         * 2. If not used, activate the lifeline by:
+         *    - Marking it as used in the game state.
+         *    - Enabling the second chance feature in the game state.
+         * 3. Notify the player with an alert that the lifeline is active.
+         * 4. Log all relevant actions and outcomes.
+         */
         if (gameService.getGameState().isSecondChanceUsed()) {
             logger.warn("Second Chance lifeline was already used.");
             showAlert("Second Chance Used", "You have already used the Second Chance lifeline.", "");
@@ -393,7 +416,6 @@ public class Controller {
         fifty.setDisable(disabled);
         joker.setDisable(disabled);
         secondChance.setDisable(disabled);
-        // convert
     }
 
     private void enableAllButtons(boolean enabled) {
