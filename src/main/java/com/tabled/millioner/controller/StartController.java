@@ -36,33 +36,57 @@ public class StartController {
 
         logger.info("Initializing StartController...");
 
-        // Устанавливаем логотип (замените "logo.png" на ваш файл)
-        logo.setImage(new Image(Objects.requireNonNull(MainApplication.class.getResource("images/logo.png")).toString()));
-        logger.info("Logo successfully loaded.");
+        // Set up the logo image
+        setLogoImage();
 
-        // Обработчики для выбора языка
-        btnEnglish.setOnAction(event -> selectedLanguage = "en");
+        // Enable buttons
+        enableButtons();
+    }
+
+    private void setLogoImage() {
+        try {
+            logo.setImage(new Image(Objects.requireNonNull(MainApplication.class.getResource("images/logo.png")).toString()));
+            logger.info("Logo successfully loaded.");
+        } catch (NullPointerException e) {
+            logger.error("Failed to load logo image: {}", e.getMessage());
+        }
+    }
+
+    private void enableButtons() {
+        btnEnglish.setDisable(false);
+        btnDeutsch.setDisable(false);
+        btnStart.setDisable(false);
+        btnExit.setDisable(false);
+    }
+
+    // Button handlers
+
+    @FXML
+    protected void onEnglishButtonClick() {
+        selectedLanguage = "en";
         logger.info("Language selected: English");
+    }
 
-        btnDeutsch.setOnAction(event -> selectedLanguage = "de");
+    @FXML
+    protected void onDeutschButtonClick() {
+        selectedLanguage = "de";
         logger.info("Language selected: Deutsch");
+    }
 
+    @FXML
+    protected void onStartButtonClick() {
+        logger.info("Start button clicked.");
+        try {
+            startGame();
+        } catch (IOException e) {
+            logger.error("Failed to start game: {}", e.getMessage(), e);
+        }
+    }
 
-        // Обработчик для кнопки Start
-        btnStart.setOnAction(event -> {
-            logger.info("Start button clicked.");
-            try {
-                startGame();
-            } catch (IOException e) {
-                logger.error("Failed to start game: {}", e.getMessage(), e);
-            }
-        });
-
-        // Обработчик для кнопки Exit
-        btnExit.setOnAction(event -> {
-            logger.info("Exit button clicked. Exiting application.");
-            System.exit(0); // Закрытие приложения
-        });
+    @FXML
+    protected void onExitButtonClick() {
+        logger.info("Exit button clicked. Exiting application.");
+        System.exit(0);
     }
 
     private void startGame() throws IOException {
@@ -72,7 +96,7 @@ public class StartController {
         Scene gameScene = new Scene(fxmlLoader.load(), 1200, 800);
 
         // Получаем контроллер игры
-        com.tabled.millioner.controller.Controller gameController = fxmlLoader.getController();
+        Controller gameController = fxmlLoader.getController();
         logger.debug("Game controller initialized.");
 
         // Устанавливаем выбранный язык перед загрузкой вопросов

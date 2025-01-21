@@ -9,13 +9,16 @@
 <?import javafx.scene.text.Font?>
 
 <?import javafx.scene.layout.AnchorPane?>
-<VBox alignment="CENTER" spacing="30" styleClass="start-page" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tabled.millioner.controller.StartController">
+<VBox alignment="CENTER" spacing="30" styleClass="start-page" stylesheets="@css/style.css"
+      xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.tabled.millioner.controller.StartController">
 
     <!-- Используем AnchorPane для размещения кнопки Exit в правом верхнем углу -->
     <AnchorPane>
         <children>
             <!-- Кнопка Exit -->
-            <Button fx:id="btnExit" prefHeight="30.0" prefWidth="80.0" styleClass="exit-button" text="Exit" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <Button fx:id="btnExit" onAction="#onExitButtonClick" prefHeight="30.0" prefWidth="80.0"
+                    styleClass="exit-button" text="Exit" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                 <font>
                     <Font size="14.0" />
                 </font>
@@ -46,12 +49,14 @@
 
     <!-- Кнопки выбора языка -->
     <HBox alignment="CENTER" spacing="30">
-        <Button fx:id="btnEnglish" prefHeight="69.0" prefWidth="185.0" styleClass="language-button" text="English">
+        <Button fx:id="btnEnglish" onAction="#onEnglishButtonClick" prefHeight="69.0" prefWidth="185.0"
+                styleClass="language-button" text="English">
             <font>
                 <Font size="14.0" />
             </font>
         </Button>
-        <Button fx:id="btnDeutsch" prefHeight="69.0" prefWidth="176.0" styleClass="language-button" text="Deutsch">
+        <Button fx:id="btnDeutsch" onAction="#onDeutschButtonClick" prefHeight="69.0" prefWidth="176.0"
+                styleClass="language-button" text="Deutsch">
             <font>
                 <Font size="14.0" />
             </font>
@@ -59,7 +64,8 @@
     </HBox>
 
     <!-- Кнопка Start -->
-    <Button fx:id="btnStart" prefHeight="93.0" prefWidth="210.0" styleClass="start-button" text="Start">
+    <Button fx:id="btnStart" onAction="#onStartButtonClick" prefHeight="93.0" prefWidth="210.0"
+            styleClass="start-button" text="Start">
         <font>
             <Font size="24.0" />
         </font>
