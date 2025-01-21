@@ -38,6 +38,9 @@ public class MainApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 1200, 800);
         stage.setTitle("Who Wants To Be A Millionaire");
         stage.setScene(scene);
+
+        // stage.setX(11);
+        // stage.setY(11);
         stage.show();
     }
 

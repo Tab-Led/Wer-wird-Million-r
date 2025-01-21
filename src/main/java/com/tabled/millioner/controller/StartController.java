@@ -16,11 +16,8 @@ import javafx.util.Duration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.File;
 import java.io.IOException;
-import java.util.Objects;
 
 
 public class StartController {
@@ -35,8 +32,6 @@ public class StartController {
     private static final Logger logger = LogManager.getLogger(StartController.class);
 
     @FXML
-    private ImageView logo;
-    @FXML
     private Button btnEnglish;
     @FXML
     private Button btnDeutsch;
@@ -47,78 +42,75 @@ public class StartController {
     @FXML
     private Button btnRules;
 
-    private String selectedLanguage = "en"; // Язык по умолчанию
+    private String selectedLanguage = "en";
+    private static boolean mp3PlayOnes = false;
 
     @FXML
-    public void initialize() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
+    public void initialize() {
         /**
          * Initializes the start screen controller.
          *
-         * Sets up the logo image, enables all buttons, and prepares the screen for user interactions.
-         *
-         * @throws UnsupportedAudioFileException If the audio file format is unsupported.
-         * @throws IOException If an error occurs during file handling.
-         * @throws LineUnavailableException If the audio line is unavailable.
+         * Plays the trailer (GIF and audio) and delays the display of the start screen for 23 seconds.
          */
-
         logger.info("Initializing StartController...");
-        MP3Player player = new MP3Player();
-        //player.play("src/main/resources/com/tabled/millioner/media/audio/trailer.wav");
 
+        if (!mp3PlayOnes) {
+            showGif();
+            MP3Player player = new MP3Player();
+            new Thread(() -> {
+                try {
+                    player.play("src/main/resources/com/tabled/millioner/media/audio/trailer.wav");
+                } catch (Exception e) {
+                    logger.error("Error playing audio: {}", e.getMessage(), e);
+                }
+            }).start();
 
-        // Воспроизведение WAV-файла
-        new Thread(() -> {
-            try {
-                player.play("src/main/resources/com/tabled/millioner/media/audio/trailer.wav");
-            } catch (Exception e) {
-                logger.error("Error playing audio: {}", e.getMessage(), e);
-            }
-        }).start();
-
-        // Отображение GIF
-        showGif("src/main/resources/com/tabled/millioner/images/trailer.gif");
-
-
-
-        setLogoImage();
+            // Устанавливаем флаг, чтобы трейлер проигрывался только один раз
+            mp3PlayOnes = true;
+        }
         enableButtons();
     }
 
-    private void showGif(String path) {
+    private void showGif() {
+        /**
+         * Displays a GIF animation in a new stage and closes it after 8 seconds.
+         * After closing the GIF stage, loads the main application window.
+         *
+         * @param gifPath The path to the GIF file.
+         */
         try {
-            Image gif = new Image(new File(path).toURI().toString());
+
+            Image gif = new Image(new File(
+                    "src/main/resources/com/tabled/millioner/images/trailer.gif").toURI().toString());
             ImageView gifView = new ImageView(gif);
             gifView.setPreserveRatio(true);
-            gifView.setFitWidth(800);
+            gifView.setFitWidth(1200);
 
-            // Добавляем GIF в интерфейс (например, в StackPane)
             StackPane root = new StackPane(gifView);
             Scene scene = new Scene(root, 1200, 800);
 
             Stage gifStage = new Stage();
+            // gifStage.setX(400);
+            // gifStage.setY(100);
+            gifStage.setAlwaysOnTop(true);
             gifStage.setScene(scene);
             gifStage.setTitle("Trailer Animation");
             gifStage.show();
+            logger.info("GIF displayed successfully.");
+
+            // close window in 12.83 sec
+            PauseTransition delay = new PauseTransition(Duration.seconds(12.83));
+            delay.setOnFinished(event -> {
+                gifStage.close();
+                logger.info("GIF stage closed. Loading main window...");
+            });
+            delay.play();
         } catch (Exception e) {
             logger.error("Error displaying GIF: {}", e.getMessage(), e);
         }
     }
 
 
-    private void setLogoImage() {
-        /**
-         * Sets the logo image for the start screen.
-         *
-         * Loads the image from the resources folder and displays it in the logo placeholder.
-         * Logs an error if the image fails to load.
-         */
-        try {
-            logo.setImage(new Image(Objects.requireNonNull(MainApplication.class.getResource("images/logo.png")).toString()));
-            logger.info("Logo successfully loaded.");
-        } catch (NullPointerException e) {
-            logger.error("Failed to load logo image: {}", e.getMessage());
-        }
-    }
 
     private void enableButtons() {
         /**
@@ -133,7 +125,6 @@ public class StartController {
         btnRules.setDisable(false);
     }
 
-    // Button handlers
 
     @FXML
     protected void onEnglishButtonClick() {
@@ -224,6 +215,8 @@ public class StartController {
          * @throws IOException If an error occurs while loading the game scene.
          */
         logger.info("Starting the game with language: {}", selectedLanguage);
+
+
 
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("view.fxml"));
         Scene gameScene = new Scene(fxmlLoader.load(), 1200, 800);

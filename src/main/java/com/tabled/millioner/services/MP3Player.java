@@ -31,7 +31,6 @@ public class MP3Player {
 
             audioClip.addLineListener(event -> {
                 if (event.getType() == LineEvent.Type.STOP) {
-                    System.out.println("Playback completed.");
                     audioClip.close();
                 }
             });
