@@ -3,6 +3,7 @@ package com.tabled.millioner.controller;
 import com.tabled.millioner.MainApplication;
 import com.tabled.millioner.models.Question;
 import com.tabled.millioner.services.GameService;
+import com.tabled.millioner.services.MP3Player;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -369,6 +370,8 @@ public class Controller {
          */
         if (result.startsWith("lose")) {
             logger.error("Player lost the game.");
+            MP3Player player = new MP3Player();
+            player.play("src/main/resources/com/tabled/millioner/media/audio/lose.wav");
             setButtonsDisabled(true);
 
             int safeAmount = Integer.parseInt(result.split(":")[1]);

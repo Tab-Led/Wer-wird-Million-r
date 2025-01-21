@@ -79,7 +79,6 @@ public class StartController {
          * @param gifPath The path to the GIF file.
          */
         try {
-
             Image gif = new Image(new File(
                     "src/main/resources/com/tabled/millioner/images/trailer.gif").toURI().toString());
             ImageView gifView = new ImageView(gif);
@@ -110,8 +109,6 @@ public class StartController {
         }
     }
 
-
-
     private void enableButtons() {
         /**
          * Enables all buttons on the start screen.
@@ -124,7 +121,6 @@ public class StartController {
         btnExit.setDisable(false);
         btnRules.setDisable(false);
     }
-
 
     @FXML
     protected void onEnglishButtonClick() {
@@ -215,8 +211,8 @@ public class StartController {
          * @throws IOException If an error occurs while loading the game scene.
          */
         logger.info("Starting the game with language: {}", selectedLanguage);
-
-
+        MP3Player player = new MP3Player();
+        player.play("src/main/resources/com/tabled/millioner/media/audio/start_3sek.wav");
 
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("view.fxml"));
         Scene gameScene = new Scene(fxmlLoader.load(), 1200, 800);
