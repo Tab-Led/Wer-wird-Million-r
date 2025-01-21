@@ -1,7 +1,7 @@
 package com.tabled.millioner.controller;
 
 import com.tabled.millioner.MainApplication;
-import com.tabled.millioner.services.MP3Player;
+import com.tabled.millioner.utils.WavPlayer;
 import javafx.animation.PauseTransition;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -56,7 +56,7 @@ public class StartController {
 
         if (!mp3PlayOnes) {
             showGif();
-            MP3Player player = new MP3Player();
+            WavPlayer player = new WavPlayer();
             new Thread(() -> {
                 try {
                     player.play("src/main/resources/com/tabled/millioner/media/audio/trailer.wav");
@@ -211,7 +211,7 @@ public class StartController {
          * @throws IOException If an error occurs while loading the game scene.
          */
         logger.info("Starting the game with language: {}", selectedLanguage);
-        MP3Player player = new MP3Player();
+        WavPlayer player = new WavPlayer();
         player.play("src/main/resources/com/tabled/millioner/media/audio/start_3sek.wav");
 
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("view.fxml"));
