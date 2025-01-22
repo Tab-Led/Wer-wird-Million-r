@@ -1,0 +1,90 @@
+.game-screen {
+    -fx-background-image: url("../images/second80.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+#level-box {
+    -fx-background-color: rgba(0, 0, 0, 0.8);
+    -fx-border-color: yellow;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-padding: 5;
+    -fx-spacing: 5;
+    -fx-pref-width: 150px;
+    -fx-alignment: center;
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial";
+    -fx-text-fill: white;
+}
+
+.safe-amount {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFD700;
+}
+
+.highlighted {
+    -fx-font-size: 18px;
+    -fx-text-fill: orange;
+    -fx-font-weight: bold;
+}
+
+.answer-button {
+    -fx-background-color: linear-gradient(to bottom, #0D47A1, #1976D2);
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
+
+.answer-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #1565C0, #1E88E5);
+    -fx-cursor: hand;
+}
+
+.answer-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #0B3D91, #0D47A1);
+}
+
+.question-area {
+    -fx-background-color: #001F54;
+    -fx-control-inner-background: #001F54;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 15;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-alignment: center;
+}
+
+.helper-button {
+    -fx-background-color: linear-gradient(to bottom, #001F54, #003366);
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+.helper-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #002B6B, #003D80);
+    -fx-cursor: hand;
+}
+.helper-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #001533, #00264D);
+}
+

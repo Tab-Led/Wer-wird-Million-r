@@ -4,25 +4,33 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="BOTTOM_CENTER" spacing="30" styleClass="start-page" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tabled.millioner.controller.StartController">
 
-
-    <HBox alignment="BOTTOM_CENTER" spacing="100" style="-fx-padding: 0 0 50 0;">
-
-        <VBox alignment="CENTER" spacing="15">
-            <Button fx:id="btnEnglish" onAction="#onEnglishButtonClick" styleClass="language-button" text="English" />
-            <Button fx:id="btnDeutsch" onAction="#onDeutschButtonClick" styleClass="language-button" text="Deutsch" />
-        </VBox>
-
-
-        <VBox alignment="CENTER" spacing="15">
-            <Button fx:id="btnStart" onAction="#onStartButtonClick" styleClass="start-button" text="Start" />
-        </VBox>
-
-
-        <VBox alignment="CENTER" spacing="15">
-            <Button fx:id="btnRules" onAction="#onRulesButtonClick" styleClass="rules-button" text="Rules" />
-            <Button fx:id="btnExit" onAction="#onExitButtonClick" prefHeight="51.0" prefWidth="91.0" styleClass="exit-button" text="Exit" />
-        </VBox>
-    </HBox>
+<VBox alignment="BOTTOM_CENTER" spacing="30" styleClass="start-page" stylesheets="@css/start-style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tabled.millioner.controller.StartController">
+   <VBox>
+      <children>
+         <VBox>
+            <children>
+            
+                                          
+                                              <HBox alignment="BOTTOM_CENTER" spacing="100" style="-fx-padding: 0 0 50 0;">
+            
+                                                  <VBox alignment="CENTER" spacing="15">
+                        <Button fx:id="btnEnglish" onAction="#onEnglishButtonClick" styleClass="language-button" text="English" />
+                        <Button fx:id="btnDeutsch" onAction="#onDeutschButtonClick" prefHeight="46.0" styleClass="language-button" text="Deutsch" />
+                    </VBox>
+            
+                                             
+                                                     <VBox alignment="CENTER" spacing="15" />
+            
+                                          
+                                                  <VBox alignment="CENTER" spacing="15">
+                        <Button fx:id="btnRules" onAction="#onRulesButtonClick" prefHeight="49.0" prefWidth="107.0" styleClass="rules-button" text="Rules" />
+                        <Button fx:id="btnExit" onAction="#onExitButtonClick" prefHeight="34.0" prefWidth="108.0" styleClass="exit-button" text="Exit" />
+                    </VBox>
+                </HBox>
+            </children>
+         </VBox>
+      </children>
+   </VBox>
+      <Button fx:id="btnStart" onAction="#onStartButtonClick" prefHeight="53.0" prefWidth="151.0" styleClass="start-button" text="Start" />
 </VBox>
