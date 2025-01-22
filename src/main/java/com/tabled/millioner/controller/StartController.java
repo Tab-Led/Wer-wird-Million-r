@@ -19,16 +19,13 @@ import org.apache.logging.log4j.Logger;
 import java.io.File;
 import java.io.IOException;
 
-
+/**
+ * Controller for the Start Screen of the "Who Wants to Be a Millionaire" game.
+ * This class handles the initialization of the start screen, including setting up the logo,
+ * enabling buttons, and handling user interactions for selecting the language, viewing the rules,
+ * starting the game, or exiting the application.
+ */
 public class StartController {
-    /**
-     * Controller for the Start Screen of the "Who Wants to Be a Millionaire" game.
-     *
-     * This class handles the initialization of the start screen, including setting up the logo,
-     * enabling buttons, and handling user interactions for selecting the language, viewing the rules,
-     * starting the game, or exiting the application.
-     */
-
     private static final Logger logger = LogManager.getLogger(StartController.class);
 
     @FXML
@@ -46,13 +43,12 @@ public class StartController {
     private String selectedLanguage = "en";
     private static boolean mp3PlayOnes = false;
 
+    /**
+     * Initializes the start screen controller.
+     * Plays the trailer (GIF and audio) and delays the display of the start screen for 23 seconds.
+     */
     @FXML
     public void initialize() {
-        /**
-         * Initializes the start screen controller.
-         *
-         * Plays the trailer (GIF and audio) and delays the display of the start screen for 23 seconds.
-         */
         logger.info("Initializing StartController...");
 
         if (!mp3PlayOnes) {
@@ -71,13 +67,12 @@ public class StartController {
         enableButtons();
     }
 
+    /**
+     * Displays a GIF animation in a new stage and closes it after 12 seconds.
+     * After closing the GIF stage, loads the main application window.
+     */
     private void showGif() {
-        /**
-         * Displays a GIF animation in a new stage and closes it after 8 seconds.
-         * After closing the GIF stage, loads the main application window.
-         *
-         * @param gifPath The path to the GIF file.
-         */
+
         try {
             Image gif = new Image(new File(
                     "src/main/resources/com/tabled/millioner/images/trailer.gif").toURI().toString());
@@ -109,12 +104,11 @@ public class StartController {
         }
     }
 
+    /**
+     * Enables all buttons on the start screen.
+     * Ensures that all buttons are active and ready for user interactions.
+     */
     private void enableButtons() {
-        /**
-         * Enables all buttons on the start screen.
-         *
-         * Ensures that all buttons are active and ready for user interactions.
-         */
         btnEnglish.setDisable(false);
         btnDeutsch.setDisable(false);
         btnStart.setDisable(false);
@@ -122,54 +116,50 @@ public class StartController {
         btnRules.setDisable(false);
     }
 
+    /**
+     * Handles the "English" button click event.
+     * Sets the selected language to English and logs the selection.
+     */
     @FXML
     protected void onEnglishButtonClick() {
-        /**
-         * Handles the "English" button click event.
-         *
-         * Sets the selected language to English and logs the selection.
-         */
         setActiveLanguageButton(btnEnglish);
         selectedLanguage = "en";
         logger.info("Language selected: English");
     }
 
+    /**
+     * Handles the "Deutsch" button click event.
+     * Sets the selected language to German and logs the selection.
+     */
     @FXML
     protected void onDeutschButtonClick() {
-        /**
-         * Handles the "Deutsch" button click event.
-         *
-         * Sets the selected language to German and logs the selection.
-         */
         setActiveLanguageButton(btnDeutsch);
         selectedLanguage = "de";
         logger.info("Language selected: Deutsch");
     }
 
+    /**
+     * Sets the active language button's style.
+     * This method highlights the selected language button by applying the "active" style class
+     * and removes the "active" style class from all other language buttons.
+     * It also updates the `selectedLanguageButton` field to keep track of the currently selected button.
+     *
+     * @param button The button that was clicked and should be highlighted as active.
+     */
     private void setActiveLanguageButton(Button button) {
-        /**
-         * Sets the active language button's style.
-         *
-         * This method highlights the selected language button by applying the "active" style class
-         * and removes the "active" style class from all other language buttons.
-         * It also updates the `selectedLanguageButton` field to keep track of the currently selected button.
-         *
-         * @param button The button that was clicked and should be highlighted as active.
-         */
         btnEnglish.getStyleClass().remove("active");
         btnDeutsch.getStyleClass().remove("active");
         button.getStyleClass().add("active");
         selectedLanguageButton = button;
     }
 
+    /**
+     * Handles the "Start" button click event.
+     * Starts the game by loading the main game screen and passing the selected language to the game controller.
+     * Logs an error if the game fails to start.
+     */
     @FXML
     protected void onStartButtonClick() {
-        /**
-         * Handles the "Start" button click event.
-         *
-         * Starts the game by loading the main game screen and passing the selected language to the game controller.
-         * Logs an error if the game fails to start.
-         */
         logger.info("Start button clicked.");
         try {
             startGame();
@@ -178,25 +168,23 @@ public class StartController {
         }
     }
 
+    /**
+     * Handles the "Exit" button click event.
+     * Exits the application by terminating the JVM process.
+     */
     @FXML
     protected void onExitButtonClick() {
-        /**
-         * Handles the "Exit" button click event.
-         *
-         * Exits the application by terminating the JVM process.
-         */
         logger.info("Exit button clicked. Exiting application.");
         System.exit(0);
     }
 
+    /**
+     * Handles the "Rules" button click event.
+     * Displays the game rules in an informational alert dialog. The rules include the gameplay instructions
+     * and the use of lifelines.
+     */
     @FXML
     protected void onRulesButtonClick() {
-        /**
-         * Handles the "Rules" button click event.
-         *
-         * Displays the game rules in an informational alert dialog. The rules include the gameplay instructions
-         * and the use of lifelines.
-         */
         logger.info("Rules button clicked. Displaying game rules.");
 
         Alert rulesAlert = new Alert(Alert.AlertType.INFORMATION);
@@ -219,15 +207,14 @@ public class StartController {
         logger.info("Rules displayed successfully.");
     }
 
+    /**
+     * Starts the main game.
+     * Loads the main game scene, initializes the game controller, and sets the selected language.
+     * Updates the current stage with the game scene.
+     *
+     * @throws IOException If an error occurs while loading the game scene.
+     */
     private void startGame() throws IOException {
-        /**
-         * Starts the main game.
-         *
-         * Loads the main game scene, initializes the game controller, and sets the selected language.
-         * Updates the current stage with the game scene.
-         *
-         * @throws IOException If an error occurs while loading the game scene.
-         */
         logger.info("Starting the game with language: {}", selectedLanguage);
         WavPlayer player = new WavPlayer();
         player.play("src/main/resources/com/tabled/millioner/media/audio/start_3sek.wav");

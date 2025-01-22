@@ -5,20 +5,20 @@ import java.util.List;
 public class Question {
     /**
      * Represents a question in the "Who Wants to Be a Millionaire" game.
-     *
+
      * This class defines the structure of a question, including its associated language, difficulty level,
      * question text, possible answers, and the correct answer. It is used to display questions to the player
      * and validate their answers.
-     *
+
      * Key Features:
      * - Stores the language of the question (`sprache`).
      * - Maintains the difficulty level of the question (`level`).
      * - Contains the question text and a list of possible answers.
      * - Tracks the correct answer for validation purposes.
-     *
+
      * Constructors:
      * - Initializes a question with language, level, text, answers, and the correct answer.
-     *
+
      * Getters and Setters:
      * - Accessors and mutators for all fields, allowing dynamic modification of question properties.
      */

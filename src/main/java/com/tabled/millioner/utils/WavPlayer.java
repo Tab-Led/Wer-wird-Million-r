@@ -9,7 +9,6 @@ import org.apache.logging.log4j.Logger;
 
 /**
  * Utility class for playing WAV audio files.
- *
  * The `WavPlayer` class provides functionality to play WAV audio files using the `javax.sound.sampled` package.
  * It handles file validation, audio stream processing, and playback lifecycle management.
  */
@@ -17,17 +16,16 @@ public class WavPlayer {
 
     private static final Logger logger = LogManager.getLogger(WavPlayer.class);
 
-    public void play(String path) {
+    /**
+     * Plays the specified WAV audio file.
 
-        /**
-         * Plays the specified WAV audio file.
-         *
-         * This method validates the file, initializes the audio stream, and plays the audio file.
-         * It also ensures that the audio playback lifecycle is properly managed, including closing the
-         * audio resources after playback is complete.
-         *
-         * @param path The path to the WAV file to be played.
-         */
+     * This method validates the file, initializes the audio stream, and plays the audio file.
+     * It also ensures that the audio playback lifecycle is properly managed, including closing the
+     * audio resources after playback is complete.
+     *
+     * @param path The path to the WAV file to be played.
+     */
+    public void play(String path) {
         try {
             File soundFile = new File(path);
             if (!soundFile.exists() || !soundFile.canRead()) {
