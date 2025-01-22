@@ -370,9 +370,11 @@ public class Controller {
          */
         if (result.startsWith("lose")) {
             logger.error("Player lost the game.");
+
+            setButtonsDisabled(true);
+
             WavPlayer player = new WavPlayer();
             player.play("src/main/resources/com/tabled/millioner/media/audio/lose.wav");
-            setButtonsDisabled(true);
 
             int safeAmount = Integer.parseInt(result.split(":")[1]);
             logger.info("Displaying safe amount: {}€", safeAmount);
@@ -383,8 +385,12 @@ public class Controller {
             switch (result) {
                 case "win":
                     logger.info("Player won the game!");
-                    System.out.println("Congratulations, you won!");
+
                     setButtonsDisabled(true);
+
+                    WavPlayer player = new WavPlayer();
+                    player.play("src/main/resources/com/tabled/millioner/media/audio/start1.wav");
+
                     highlightLevel(gameService.getGameState().getCurrentLevel());
                     showAlert("WIN", "WIN", "Congratulations!!! You won 1.000.000€");
                     break;
