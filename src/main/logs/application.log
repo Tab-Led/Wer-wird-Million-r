@@ -15978,3 +15978,21 @@
 2025-01-21 23:47:12 [INFO ] com.tabled.millioner.controller.StartController - GIF displayed successfully.
 2025-01-21 23:49:13 [INFO ] com.tabled.millioner.controller.StartController - Initializing StartController...
 2025-01-21 23:49:16 [INFO ] com.tabled.millioner.controller.StartController - GIF displayed successfully.
+2025-01-22 08:58:28 [INFO ] com.tabled.millioner.controller.StartController - Initializing StartController...
+2025-01-22 08:58:41 [INFO ] com.tabled.millioner.controller.StartController - GIF displayed successfully.
+2025-01-22 08:58:41 [INFO ] com.tabled.millioner.utils.WavPlayer - Playing audio file: src/main/resources/com/tabled/millioner/media/audio/trailer.wav
+2025-01-22 08:58:54 [INFO ] com.tabled.millioner.controller.StartController - GIF stage closed. Loading main window...
+2025-01-22 08:58:55 [INFO ] com.tabled.millioner.utils.WavPlayer - Playback completed for file: src/main/resources/com/tabled/millioner/media/audio/trailer.wav
+2025-01-22 08:58:55 [INFO ] com.tabled.millioner.utils.WavPlayer - Playback completed for file: src/main/resources/com/tabled/millioner/media/audio/trailer.wav
+2025-01-22 08:58:55 [INFO ] com.tabled.millioner.controller.StartController - Exit button clicked. Exiting application.
+2025-01-22 08:59:37 [INFO ] com.tabled.millioner.controller.StartController - Initializing StartController...
+2025-01-22 08:59:45 [INFO ] com.tabled.millioner.controller.StartController - GIF displayed successfully.
+2025-01-22 08:59:45 [INFO ] com.tabled.millioner.utils.WavPlayer - Playing audio file: src/main/resources/com/tabled/millioner/media/audio/trailer.wav
+2025-01-22 08:59:58 [INFO ] com.tabled.millioner.controller.StartController - GIF stage closed. Loading main window...
+2025-01-22 08:59:59 [INFO ] com.tabled.millioner.utils.WavPlayer - Playback completed for file: src/main/resources/com/tabled/millioner/media/audio/trailer.wav
+2025-01-22 08:59:59 [INFO ] com.tabled.millioner.utils.WavPlayer - Playback completed for file: src/main/resources/com/tabled/millioner/media/audio/trailer.wav
+2025-01-22 09:00:00 [INFO ] com.tabled.millioner.controller.StartController - Language selected: English
+2025-01-22 09:00:00 [INFO ] com.tabled.millioner.controller.StartController - Language selected: Deutsch
+2025-01-22 09:00:02 [INFO ] com.tabled.millioner.controller.StartController - Rules button clicked. Displaying game rules.
+2025-01-22 09:00:03 [INFO ] com.tabled.millioner.controller.StartController - Rules displayed successfully.
+2025-01-22 09:00:03 [INFO ] com.tabled.millioner.controller.StartController - Exit button clicked. Exiting application.

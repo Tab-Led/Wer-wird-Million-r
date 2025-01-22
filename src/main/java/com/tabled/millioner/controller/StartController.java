@@ -65,7 +65,6 @@ public class StartController {
                 }
             }).start();
 
-            // Устанавливаем флаг, чтобы трейлер проигрывался только один раз
             mp3PlayOnes = true;
         }
         enableButtons();

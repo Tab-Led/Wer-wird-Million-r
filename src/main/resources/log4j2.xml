@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
-    <!-- Подавляем несущественные сообщения -->
     <Properties>
         <Property name="log.pattern">%d{yyyy-MM-dd HH:mm:ss} [%highlight{%-5level}] %logger{36} - %msg%n</Property>
         <Property name="log.file.pattern">%d{yyyy-MM-dd HH:mm:ss} [%-5level] %logger{36} - %msg%n</Property>
@@ -8,29 +7,28 @@
     </Properties>
 
     <Appenders>
-        <!-- Файловый аппендер -->
         <File name="FileAppender" fileName="${log.file.path}">
             <PatternLayout pattern="${log.file.pattern}" />
         </File>
     </Appenders>
 
     <Loggers>
-        <!-- Логирование для пакета controller -->
         <Logger name="com.tabled.millioner.controller" level="INFO" additivity="false">
             <AppenderRef ref="FileAppender" />
         </Logger>
 
-        <!-- Логирование для пакета services -->
         <Logger name="com.tabled.millioner.services" level="DEBUG" additivity="false">
             <AppenderRef ref="FileAppender" />
         </Logger>
 
-        <!-- Логирование для пакета models -->
         <Logger name="com.tabled.millioner.models" level="WARN" additivity="false">
             <AppenderRef ref="FileAppender" />
         </Logger>
 
-        <!-- Корневой логгер для остальных пакетов -->
+        <Logger name="com.tabled.millioner.utils" level="INFO" additivity="false">
+            <AppenderRef ref="FileAppender" />
+        </Logger>
+
         <Root level="ERROR">
             <AppenderRef ref="FileAppender" />
         </Root>

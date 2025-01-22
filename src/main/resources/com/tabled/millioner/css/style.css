@@ -1,134 +1,143 @@
-/* Существующие стили */
-.highlighted {
-    -fx-background-color: rgba(255, 165, 0, 0.5);
-    -fx-text-fill: black;
+.button {
+    -fx-background-color: #1E90FF;
+    -fx-text-fill: white;
     -fx-font-size: 18px;
     -fx-font-weight: bold;
-    -fx-padding: 5 10 5 10;
-    -fx-border-color: black;
-    -fx-border-width: 2;
-    -fx-border-radius: 10;
-}
-
-#level-box {
-    -fx-background-image: url("../images/background.gif");
-    -fx-background-repeat: no-repeat;
-    -fx-background-size: cover;
-    -fx-padding: 3;
-    -fx-spacing: 3;
-    -fx-border-color: yellow;
-    -fx-border-width: 5;
-    -fx-border-radius: 5;
-    -fx-alignment: center;
-}
-
-.label {
-    -fx-font-size: 16px; /* Увеличиваем шрифт */
-    -fx-font-family: "Arial"; /* Оставляем удобный шрифт */
-    -fx-text-fill: yellow; /* Цвет текста */
-}
-
-.safe-amount {
-    -fx-font-size: 18px; /* Ещё больше для выделенных сумм */
-    -fx-font-weight: bold; /* Жирный текст */
-    -fx-text-fill: white; /* Белый текст для контраста */
-}
-
-.highlighted {
-    -fx-font-size: 16px; /* Максимальный размер для текущего уровня */
-    -fx-text-fill: orange; /* Цвет выделения */
-    -fx-font-weight: bold; /* Жирный шрифт */
+    -fx-border-color: #4682B4;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 50px;
+    -fx-padding: 10 20;
 }
 
 .restart-button {
-    -fx-background-color: #1E90FF; /* Голубой фон */
-    -fx-text-fill: white; /* Белый текст */
-    -fx-font-size: 16px; /* Размер шрифта */
-    -fx-font-weight: bold; /* Жирный текст */
-    -fx-border-color: #4682B4; /* Синяя рамка */
+    -fx-background-color: #4CAF50;
+    -fx-border-color: #2E8B57;
+}
+
+.restart-button:hover {
+    -fx-background-color: #5A9FD4;
+    -fx-cursor: hand;
+}
+
+.restart-button:pressed {
+    -fx-background-color: #104E8B;
+}
+
+.exit-button {
+    -fx-background-color: #1E90FF;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-border-color: #4682B4;
     -fx-border-width: 2px;
     -fx-border-radius: 10px;
     -fx-background-radius: 10px;
     -fx-padding: 10 20;
 }
 
-.restart-button:hover {
-    -fx-background-color: #5A9FD4; /* Светло-голубой фон при наведении */
+.exit-button:hover {
+    -fx-background-color: #5A9FD4;
     -fx-cursor: hand;
 }
 
-.restart-button:pressed {
-    -fx-background-color: #104E8B; /* Темно-синий фон при нажатии */
+.exit-button:pressed {
+    -fx-background-color: #104E8B;
 }
 
-/* Задний фон для стартовой страницы */
+.language-button {
+    -fx-background-color: #4682B4;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-border-color: #1E90FF;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 50px;
+    -fx-padding: 10 20;
+}
+
+.language-button:hover {
+    -fx-background-color: #5A9FD4;
+    -fx-cursor: hand;
+}
+
+.language-button:pressed {
+    -fx-background-color: #104E8B;
+}
+
+.language-button.active {
+    -fx-background-color: #5A9FD4;
+    -fx-text-fill: #FFD700;
+    -fx-font-weight: bold;
+    -fx-border-color: #104E8B;
+}
+
+.start-button {
+    -fx-background-color: #1E90FF;
+    -fx-text-fill: white;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-border-color: #4682B4;
+    -fx-border-width: 3px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-padding: 20 40;
+}
+
+.start-button:hover {
+    -fx-background-color: #5A9FD4;
+    -fx-cursor: hand;
+}
+
+.start-button:pressed {
+    -fx-background-color: #104E8B;
+}
+
+#level-box {
+    -fx-background-color: rgba(0, 0, 0, 0.8);
+    -fx-padding: 10;
+    -fx-spacing: 5;
+    -fx-border-color: yellow;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-alignment: center;
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial";
+    -fx-text-fill: white;
+}
+
+.safe-amount {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFD700;
+}
+
+.highlighted {
+    -fx-font-size: 18px;
+    -fx-text-fill: orange;
+    -fx-font-weight: bold;
+}
+
 .start-page {
-    -fx-background-image: url("../images/startbackgroung.jpg"); /* Путь к изображению */
-    -fx-background-repeat: no-repeat; /* Избегать повторений */
-    -fx-background-size: cover; /* Масштабировать на весь экран */
-    -fx-background-position: center; /* Центрирование изображения */
+    -fx-background-image: url("../images/startbackgroung.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
     -fx-padding: 30;
     -fx-alignment: center;
 }
 
-.exit-button {
-    -fx-background-color: #ff6666; /* Красный фон */
-    -fx-text-fill: white;         /* Белый текст */
-    -fx-font-size: 14px;          /* Размер шрифта */
-    -fx-border-radius: 5px;       /* Радиус закругления */
-    -fx-background-radius: 5px;   /* Радиус фона */
+.game-screen {
+    -fx-background-image: url("../images/second80.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
 }
-
-/* Заголовок */
-.title-label {
-    -fx-font-size: 48px; /* Увеличенный шрифт */
-    -fx-font-weight: bold;
-    -fx-text-fill: white; /* Белый текст */
-    -fx-effect: dropshadow(gaussian, black, 10, 0.8, 0, 2); /* Тень для текста */
-    -fx-padding: 20;
-}
-
-/* Кнопки языков */
-.language-button {
-    -fx-background-color: #4682B4; /* Синий фон */
-    -fx-text-fill: white; /* Белый текст */
-    -fx-font-size: 24px; /* Крупный шрифт */
-    -fx-font-weight: bold;
-    -fx-border-color: #1E90FF; /* Голубая рамка */
-    -fx-border-width: 2px;
-    -fx-border-radius: 10px;
-    -fx-background-radius: 10px;
-    -fx-padding: 15 30; /* Внутренние отступы */
-}
-
-/* Кнопка "Start" */
-.start-button {
-    -fx-background-color: #1E90FF; /* Голубой фон */
-    -fx-text-fill: white; /* Белый текст */
-    -fx-font-size: 32px; /* Крупный шрифт */
-    -fx-font-weight: bold;
-    -fx-border-color: #4682B4; /* Синяя рамка */
-    -fx-border-width: 3px;
-    -fx-border-radius: 15px;
-    -fx-background-radius: 15px;
-    -fx-padding: 20 40; /* Увеличенные отступы */
-}
-
-/* Эффекты при наведении */
-.language-button:hover, .start-button:hover {
-    -fx-background-color: #5A9FD4; /* Более светлый оттенок */
-    -fx-cursor: hand; /* Курсор-рука при наведении */
-}
-
-.language-button:pressed, .start-button:pressed {
-    -fx-background-color: #104E8B; /* Тёмно-синий цвет при нажатии */
-}
-
-.rules-button {
-    -fx-background-color: #4CAF50;
-    -fx-text-fill: white;
-    -fx-font-weight: bold;
-    -fx-border-radius: 5;
-    -fx-background-radius: 5;
-}
-

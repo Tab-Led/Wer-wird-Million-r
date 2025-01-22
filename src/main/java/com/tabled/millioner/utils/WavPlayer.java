@@ -4,6 +4,8 @@ package com.tabled.millioner.utils;
 import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Utility class for playing WAV audio files.
@@ -13,7 +15,10 @@ import java.io.IOException;
  */
 public class WavPlayer {
 
+    private static final Logger logger = LogManager.getLogger(WavPlayer.class);
+
     public void play(String path) {
+
         /**
          * Plays the specified WAV audio file.
          *
@@ -26,7 +31,7 @@ public class WavPlayer {
         try {
             File soundFile = new File(path);
             if (!soundFile.exists() || !soundFile.canRead()) {
-                System.out.println("File not found or not readable: " + path);
+                logger.error("File not found or not readable: {}", path);
                 return;
             }
 
@@ -36,7 +41,7 @@ public class WavPlayer {
             DataLine.Info info = new DataLine.Info(Clip.class, format);
 
             if (!AudioSystem.isLineSupported(info)) {
-                System.out.println("Audio line not supported.");
+                logger.error("Audio line not supported.");
                 return;
             }
 
@@ -44,23 +49,24 @@ public class WavPlayer {
             audioClip.open(audioStream);
             audioClip.start();
 
+            logger.info("Playing audio file: {}", path);
+
             audioClip.addLineListener(event -> {
                 if (event.getType() == LineEvent.Type.STOP) {
                     audioClip.close();
                 }
+                logger.info("Playback completed for file: {}", path);
             });
 
             Thread.sleep(audioClip.getMicrosecondLength() / 1000);
         } catch (UnsupportedAudioFileException e) {
-            System.out.println("Unsupported audio format.");
-            e.printStackTrace();
+            logger.error("Unsupported audio format for file: {}", path, e);
         } catch (IOException e) {
-            System.out.println("Error reading the audio file.");
-            e.printStackTrace();
+            logger.error("Error reading the audio file: {}", path, e);
         } catch (LineUnavailableException e) {
-            System.out.println("Audio line unavailable.");
-            e.printStackTrace();
+            logger.error("Audio line unavailable for file: {}", path, e);
         } catch (InterruptedException e) {
+            logger.error("Playback interrupted for file: {}", path, e);
             Thread.currentThread().interrupt();
         }
     }

@@ -382,7 +382,6 @@ public class Controller {
         } else {
             switch (result) {
                 case "win":
-                    // Показать экран победы
                     logger.info("Player won the game!");
                     System.out.println("Congratulations, you won!");
                     setButtonsDisabled(true);
@@ -483,7 +482,6 @@ public class Controller {
         logger.debug("Safe amount UI updated.");
     }
 
-    // css for level
     public void highlightLevel(int level) throws NoSuchFieldException, IllegalAccessException {
         /**
          * Highlights the current level in the prize ladder.

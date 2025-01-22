@@ -157,8 +157,6 @@ public class GameService {
         this.questions = QuestionLoader.loadQuestionsByParams(filePath, gameState.getLanguage(), lvl);
         logger.info("Questions reloaded for language: {}, difficulty: {}", gameState.getLanguage(), lvl);
         logger.info("Number of questions loaded: {}", questions.size());
-        System.out.println("Questions reloaded for language: " + gameState.getLanguage() + ", difficulty: " + lvl);
-        System.out.println("Number of questions loaded: " + questions.size());
     }
 
     public GameState getGameState() {

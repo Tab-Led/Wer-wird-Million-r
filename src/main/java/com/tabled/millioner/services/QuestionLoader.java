@@ -70,11 +70,9 @@ public class QuestionLoader {
         logger.info("Language: {}, Difficulty: {}", language, difficulty);
 
         try (FileReader reader = new FileReader(filePath)) {
-            // Парсим JSON файл
             JsonObject jsonObject = JsonParser.parseReader(reader).getAsJsonObject();
             logger.debug("Successfully parsed JSON file.");
 
-            // Получаем секцию для указанного языка
             JsonObject languageSection = jsonObject.getAsJsonObject(language);
             if (languageSection == null) {
                 logger.error("Language '{}' not found in the questions file.", language);
@@ -82,7 +80,6 @@ public class QuestionLoader {
             }
             logger.debug("Language section '{}' found.", language);
 
-            // Получаем секцию для указанной сложности
             JsonObject difficultySection = languageSection.getAsJsonObject(difficulty);
             if (difficultySection == null) {
                 logger.error("Difficulty '{}' not found in the language section '{}'.", difficulty, language);
@@ -90,7 +87,6 @@ public class QuestionLoader {
             }
             logger.debug("Difficulty section '{}' found for language '{}'.", difficulty, language);
 
-            // Преобразуем вопросы в объекты
             for (String key : difficultySection.keySet()) {
                 JsonObject questionObj = difficultySection.getAsJsonObject(key);
 
@@ -101,7 +97,6 @@ public class QuestionLoader {
                 }
                 String answer = questionObj.get("answer").getAsString();
 
-                // Создаём объект Question
                 questions.add(new Question(language, difficulty, questionText, options, answer));
                 logger.debug("Loaded question: {}", questionText);
             }
