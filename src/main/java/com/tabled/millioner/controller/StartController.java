@@ -42,6 +42,7 @@ public class StartController {
     @FXML
     private Button btnRules;
 
+    private Button selectedLanguageButton;
     private String selectedLanguage = "en";
     private static boolean mp3PlayOnes = false;
 
@@ -128,6 +129,7 @@ public class StartController {
          *
          * Sets the selected language to English and logs the selection.
          */
+        setActiveLanguageButton(btnEnglish);
         selectedLanguage = "en";
         logger.info("Language selected: English");
     }
@@ -139,8 +141,25 @@ public class StartController {
          *
          * Sets the selected language to German and logs the selection.
          */
+        setActiveLanguageButton(btnDeutsch);
         selectedLanguage = "de";
         logger.info("Language selected: Deutsch");
+    }
+
+    private void setActiveLanguageButton(Button button) {
+        /**
+         * Sets the active language button's style.
+         *
+         * This method highlights the selected language button by applying the "active" style class
+         * and removes the "active" style class from all other language buttons.
+         * It also updates the `selectedLanguageButton` field to keep track of the currently selected button.
+         *
+         * @param button The button that was clicked and should be highlighted as active.
+         */
+        btnEnglish.getStyleClass().remove("active");
+        btnDeutsch.getStyleClass().remove("active");
+        button.getStyleClass().add("active");
+        selectedLanguageButton = button;
     }
 
     @FXML

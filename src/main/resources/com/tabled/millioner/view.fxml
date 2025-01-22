@@ -8,145 +8,92 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
-<GridPane minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0"
-          styleClass="game-screen" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
-          fx:controller="com.tabled.millioner.controller.Controller">
+<GridPane styleClass="game-screen" stylesheets="@css/game-style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tabled.millioner.controller.Controller">
    <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="0.0" prefWidth="50.0" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="430.0" minWidth="10.0" prefWidth="275.0" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="519.0" minWidth="10.0" prefWidth="275.0" />
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="469.0" minWidth="10.0" prefWidth="275.0" />
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="401.0" minWidth="10.0" prefWidth="275.0" />
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="50.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="469.0" minWidth="10.0" prefWidth="332.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="401.0" minWidth="10.0" prefWidth="218.0" />
    </columnConstraints>
    <rowConstraints>
-      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="160.0" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="214.0" minHeight="10.0" prefHeight="170.0" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="279.0" minHeight="2.0" prefHeight="178.0" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="332.0" minHeight="10.0" prefHeight="98.0" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="239.0" minHeight="10.0" prefHeight="104.0" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="239.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="110.0" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="113.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="214.0" minHeight="10.0" prefHeight="121.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="279.0" minHeight="2.0" prefHeight="124.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="332.0" minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="239.0" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="239.0" minHeight="10.0" prefHeight="121.0" vgrow="SOMETIMES" />
    </rowConstraints>
    <children>
-      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.rowSpan="2">
+
+      <VBox alignment="CENTER" prefHeight="280.0" prefWidth="0.0" spacing="10" GridPane.columnIndex="4" GridPane.rowIndex="5">
          <children>
-            <Button fx:id="exit" mnemonicParsing="false" onAction="#onExitButtonClick" prefWidth="200.0" text="Exit">
-               <VBox.margin>
-                  <Insets left="20.0" top="20.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button fx:id="fifty" mnemonicParsing="false" onAction="#on50ButtonClick" prefWidth="200.0" text="50:50">
-               <VBox.margin>
-                  <Insets left="20.0" top="20.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="18.0" />
-               </font></Button>
-            <Button fx:id="joker" mnemonicParsing="false" onAction="#onJokerButtonClick" prefWidth="200.0" text="Joker">
-               <VBox.margin>
-                  <Insets left="20.0" top="20.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="18.0" />
-               </font></Button>
-            <Button fx:id="secondChance" mnemonicParsing="false" onAction="#onSecondChanceButtonClick" prefWidth="200.0" text="Second Chance">
-               <VBox.margin>
-                  <Insets left="20.0" top="20.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="18.0" />
-               </font></Button>
-            <Button fx:id="btnRestart" mnemonicParsing="false" onAction="#onRestartButtonClick" prefWidth="200.0" text="Restart">
-               <VBox.margin>
-                  <Insets left="20.0" top="20.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
+            <Button fx:id="fifty" onAction="#on50ButtonClick" prefHeight="82.0" prefWidth="190.0" styleClass="helper-button" text="50:50" />
+            <Button fx:id="joker" onAction="#onJokerButtonClick" prefHeight="90.0" prefWidth="190.0" styleClass="helper-button" text="Joker" />
+            <Button fx:id="secondChance" onAction="#onSecondChanceButtonClick" prefHeight="39.0" prefWidth="190.0" styleClass="helper-button" text="Second Chance" />
          </children>
       </VBox>
 
-      <StackPane prefHeight="600.0" prefWidth="200.0" stylesheets="@css/style.css" GridPane.columnIndex="4" GridPane.rowIndex="1" GridPane.rowSpan="2">
+      <VBox id="level-box" alignment="CENTER" prefHeight="473.0" prefWidth="275.0" spacing="5" GridPane.columnIndex="4" GridPane.rowIndex="2" GridPane.rowSpan="2">
          <children>
-            <VBox id="level-box">
-               <children>
-                  <Label fx:id="label_15" text="15 - €1 MILLION" />
-                  <Label fx:id="label_14" text="14 - €500.000" />
-                  <Label fx:id="label_13" text="13 - €125.000" />
-                  <Label fx:id="label_12" text="12 - €64.000" />
-                  <Label fx:id="label_11" text="11 - €32.000" />
-                  <Label fx:id="label_10" text="10 - €16.000" />
-                  <Label fx:id="label_9" text="9 - €8.000" />
-                  <Label fx:id="label_8" text="8 - €4.000" />
-                  <Label fx:id="label_7" text="7 - €2.000" />
-                  <Label fx:id="label_6" text="6 - €1.000" />
-                  <Label fx:id="label_5" text="5 - €500" />
-                  <Label fx:id="label_4" text="4 - €300" />
-                  <Label fx:id="label_3" text="3 - €200" />
-                  <Label fx:id="label_2" text="2 - €100" />
-                  <Label fx:id="label_1" text="1 - €50" />
-               </children>
-            </VBox>
+            <Label fx:id="label_15" text="15 - €1 MILLION" />
+            <Label fx:id="label_14" text="14 - €500.000" />
+            <Label fx:id="label_13" text="13 - €125.000" />
+            <Label fx:id="label_12" text="12 - €64.000" />
+            <Label fx:id="label_11" text="11 - €32.000" />
+            <Label fx:id="label_10" text="10 - €16.000" />
+            <Label fx:id="label_9" text="9 - €8.000" />
+            <Label fx:id="label_8" text="8 - €4.000" />
+            <Label fx:id="label_7" text="7 - €2.000" />
+            <Label fx:id="label_6" text="6 - €1.000" />
+            <Label fx:id="label_5" text="5 - €500" />
+            <Label fx:id="label_4" text="4 - €300" />
+            <Label fx:id="label_3" text="3 - €200" />
+            <Label fx:id="label_2" text="2 - €100" />
+            <Label fx:id="label_1" text="1 - €50" />
          </children>
-      </StackPane>
+      </VBox>
 
-
-      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="3">
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="600.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="4">
          <children>
-
-            <TextArea fx:id="question" prefHeight="200.0" prefWidth="1100.0" styleClass="text-area" wrapText="true">
-               <font>
-                  <Font size="24.0" />
-               </font></TextArea>
-
+            <TextArea fx:id="question" prefHeight="118.0" prefWidth="852.0" styleClass="question-area" wrapText="true" />
          </children>
       </HBox>
 
 
-      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="4">
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="600.0" spacing="20" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="5">
          <children>
-            <Button fx:id="a" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onAButtonClick" prefHeight="50.0" prefWidth="500.0" text="A">
+            <Button fx:id="a" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onAButtonClick" prefHeight="80.0" prefWidth="320.0" styleClass="answer-button" text="A">
                <HBox.margin>
                   <Insets left="20.0" right="50.0" top="20.0" />
                </HBox.margin>
-               <font>
-                  <Font size="18.0" />
-               </font></Button>
-            <Button fx:id="b" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onBButtonClick" prefHeight="50.0" prefWidth="500.0" text="B">
+              </Button>
+            <Button fx:id="b" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onBButtonClick" prefHeight="80.0" prefWidth="320.0" styleClass="answer-button" text="B">
                <HBox.margin>
                   <Insets left="20.0" right="50.0" top="20.0" />
                </HBox.margin>
-               <font>
-                  <Font size="18.0" />
-               </font></Button>
+               </Button>
          </children>
       </HBox>
-      <HBox layoutX="60.0" layoutY="563.0" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="5">
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="600.0" spacing="20" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="6">
          <children>
-            <Button fx:id="c" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCButtonClick" prefHeight="50.0" prefWidth="500.0" text="C">
+            <Button fx:id="c" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCButtonClick" prefHeight="80.0" prefWidth="320.0" styleClass="answer-button" text="C">
                <HBox.margin>
                   <Insets left="20.0" right="50.0" top="20.0" />
                </HBox.margin>
-               <font>
-                  <Font size="18.0" />
-               </font></Button>
-            <Button fx:id="d" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onDButtonClick" prefHeight="50.0" prefWidth="500.0" text="D">
+            </Button>
+            <Button fx:id="d" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onDButtonClick" prefHeight="80.0" prefWidth="320.0" styleClass="answer-button" text="D">
                <HBox.margin>
                   <Insets left="20.0" right="50.0" top="20.0" />
                </HBox.margin>
-               <font>
-                  <Font size="18.0" />
-               </font></Button>
+               </Button>
          </children>
       </HBox>
+      <Button fx:id="exit" onAction="#onExitButtonClick" prefHeight="40.0" prefWidth="100.0" styleClass="helper-button" text="Exit" GridPane.columnIndex="1" />
+      <Button fx:id="btnRestart" onAction="#onRestartButtonClick" prefHeight="40.0" prefWidth="100.0" styleClass="helper-button" text="Restart" GridPane.columnIndex="1" GridPane.rowIndex="1" />
    </children>
 </GridPane>
