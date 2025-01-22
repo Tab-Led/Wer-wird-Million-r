@@ -62,7 +62,6 @@ public class GameService {
         this.gameState = new GameState();
         this.questions = QuestionLoader.loadQuestionsByParams(filePath, gameState.getLanguage(), lvl);
         logger.info("Questions loaded for language: {}", gameState.getLanguage());
-        System.out.println("Questions loaded for language: " + gameState.getLanguage());
     }
 
     /**
@@ -79,7 +78,6 @@ public class GameService {
         boolean isCorrect = checkAnswer(answer, index);
         if (isCorrect) {
             logger.info("Correct answer for question index: {}", index);
-            System.out.println("Correct answer!");
             gameState.setCurrentLevel(gameState.getCurrentLevel() + 1);
             logger.info("Current level updated to: {}", gameState.getCurrentLevel());
 

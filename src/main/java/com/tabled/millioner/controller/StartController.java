@@ -39,7 +39,6 @@ public class StartController {
     @FXML
     private Button btnRules;
 
-    private Button selectedLanguageButton;
     private String selectedLanguage = "en";
     private static boolean mp3PlayOnes = false;
 
@@ -150,7 +149,6 @@ public class StartController {
         btnEnglish.getStyleClass().remove("active");
         btnDeutsch.getStyleClass().remove("active");
         button.getStyleClass().add("active");
-        selectedLanguageButton = button;
     }
 
     /**

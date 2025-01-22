@@ -21983,3 +21983,267 @@
 2025-01-22 12:20:26 [INFO ] com.tabled.millioner.controller.StartController - Initializing StartController...
 2025-01-22 12:20:30 [INFO ] com.tabled.millioner.controller.StartController - GIF displayed successfully.
 2025-01-22 12:20:30 [INFO ] com.tabled.millioner.utils.WavPlayer - Playing audio file: src/main/resources/com/tabled/millioner/media/audio/trailer.wav
+2025-01-22 14:34:34 [INFO ] com.tabled.millioner.controller.StartController - Initializing StartController...
+2025-01-22 14:34:43 [INFO ] com.tabled.millioner.controller.StartController - GIF displayed successfully.
+2025-01-22 14:34:43 [INFO ] com.tabled.millioner.utils.WavPlayer - Playing audio file: src/main/resources/com/tabled/millioner/media/audio/trailer.wav
+2025-01-22 14:34:56 [INFO ] com.tabled.millioner.controller.StartController - GIF stage closed. Loading main window...
+2025-01-22 14:34:57 [INFO ] com.tabled.millioner.utils.WavPlayer - Playback completed for file: src/main/resources/com/tabled/millioner/media/audio/trailer.wav
+2025-01-22 14:34:57 [INFO ] com.tabled.millioner.utils.WavPlayer - Playback completed for file: src/main/resources/com/tabled/millioner/media/audio/trailer.wav
+2025-01-22 14:34:58 [INFO ] com.tabled.millioner.controller.StartController - Language selected: English
+2025-01-22 14:34:58 [INFO ] com.tabled.millioner.controller.StartController - Language selected: Deutsch
+2025-01-22 14:34:59 [INFO ] com.tabled.millioner.controller.StartController - Language selected: English
+2025-01-22 14:34:59 [INFO ] com.tabled.millioner.controller.StartController - Rules button clicked. Displaying game rules.
+2025-01-22 14:35:01 [INFO ] com.tabled.millioner.controller.StartController - Rules displayed successfully.
+2025-01-22 14:35:02 [INFO ] com.tabled.millioner.controller.StartController - Language selected: Deutsch
+2025-01-22 14:35:03 [INFO ] com.tabled.millioner.controller.StartController - Language selected: English
+2025-01-22 14:35:04 [INFO ] com.tabled.millioner.controller.StartController - Start button clicked.
+2025-01-22 14:35:04 [INFO ] com.tabled.millioner.controller.StartController - Starting the game with language: en
+2025-01-22 14:35:04 [INFO ] com.tabled.millioner.utils.WavPlayer - Playing audio file: src/main/resources/com/tabled/millioner/media/audio/start_3sek.wav
+2025-01-22 14:35:04 [INFO ] com.tabled.millioner.utils.WavPlayer - Playback completed for file: src/main/resources/com/tabled/millioner/media/audio/start_3sek.wav
+2025-01-22 14:35:07 [INFO ] com.tabled.millioner.controller.Controller - Initializing the Controller...
+2025-01-22 14:35:07 [INFO ] com.tabled.millioner.services.GameService - Questions file path: C:\Users\human\IdeaProjects\Wer-wird-Million-r\target\classes\com\tabled\millioner\data\questions.json
+2025-01-22 14:35:07 [INFO ] com.tabled.millioner.services.QuestionLoader - Starting to load questions from file: C:\Users\human\IdeaProjects\Wer-wird-Million-r\target\classes\com\tabled\millioner\data\questions.json
+2025-01-22 14:35:07 [INFO ] com.tabled.millioner.services.QuestionLoader - Language: en, Difficulty: easy
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Successfully parsed JSON file.
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Language section 'en' found.
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Difficulty section 'easy' found for language 'en'.
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the smallest planet in the Solar System?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the famous palace in Vienna?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: How many continents are there in the world?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Who painted 'The Starry Night'?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the closest galaxy to the Milky Way?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the most populous country in the world?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Who invented the telephone?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the chemical symbol for sodium?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the Roman god of war?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which famous scientist is known for his work on the laws of motion?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the process by which water vapor becomes liquid?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the spaceship in Star Wars piloted by Han Solo?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the princess Mario is often trying to rescue?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the animated movie about emotions inside a girl's mind?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which actor played Iron Man in the Marvel Cinematic Universe?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: In which game do players build structures and survive against creatures like Creepers?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the art style associated with Pablo Picasso?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the AI antagonist in 'The Matrix'?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the spaceship in the 'Alien' movie?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which animal is the symbol of the World Wildlife Fund (WWF)?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which country gifted the Statue of Liberty to the United States?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the ancient Egyptian writing system?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which country was formerly known as Persia?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the famous trading route that connected Europe and Asia?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Who discovered penicillin?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which ancient civilization is known for inventing the wheel?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which famous scientist proposed the heliocentric model of the solar system?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Who is credited with inventing the printing press?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which famous structure was built during the reign of Shah Jahan in India?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which structure connects Europe and Asia in Turkey?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which explorer completed the first circumnavigation of the Earth?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which method is used to print something in Java?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which of these is a loop structure in Java?
+2025-01-22 14:35:07 [INFO ] com.tabled.millioner.services.QuestionLoader - Successfully loaded 33 questions for language 'en' and difficulty 'easy'.
+2025-01-22 14:35:07 [INFO ] com.tabled.millioner.services.GameService - Questions loaded for language: en
+2025-01-22 14:35:07 [INFO ] com.tabled.millioner.controller.Controller - Setting a new question.
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 33
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 33
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 33
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 33
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:07 [INFO ] com.tabled.millioner.services.GameService - Difficulty level set to: easy
+2025-01-22 14:35:07 [INFO ] com.tabled.millioner.services.QuestionLoader - Starting to load questions from file: C:\Users\human\IdeaProjects\Wer-wird-Million-r\target\classes\com\tabled\millioner\data\questions.json
+2025-01-22 14:35:07 [INFO ] com.tabled.millioner.services.QuestionLoader - Language: en, Difficulty: easy
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Successfully parsed JSON file.
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Language section 'en' found.
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Difficulty section 'easy' found for language 'en'.
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the smallest planet in the Solar System?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the famous palace in Vienna?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: How many continents are there in the world?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Who painted 'The Starry Night'?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the closest galaxy to the Milky Way?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the most populous country in the world?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Who invented the telephone?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the chemical symbol for sodium?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the Roman god of war?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which famous scientist is known for his work on the laws of motion?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the process by which water vapor becomes liquid?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the spaceship in Star Wars piloted by Han Solo?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the princess Mario is often trying to rescue?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the animated movie about emotions inside a girl's mind?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which actor played Iron Man in the Marvel Cinematic Universe?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: In which game do players build structures and survive against creatures like Creepers?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the art style associated with Pablo Picasso?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the AI antagonist in 'The Matrix'?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the spaceship in the 'Alien' movie?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which animal is the symbol of the World Wildlife Fund (WWF)?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which country gifted the Statue of Liberty to the United States?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the ancient Egyptian writing system?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which country was formerly known as Persia?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the famous trading route that connected Europe and Asia?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Who discovered penicillin?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which ancient civilization is known for inventing the wheel?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which famous scientist proposed the heliocentric model of the solar system?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Who is credited with inventing the printing press?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which famous structure was built during the reign of Shah Jahan in India?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which structure connects Europe and Asia in Turkey?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which explorer completed the first circumnavigation of the Earth?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which method is used to print something in Java?
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which of these is a loop structure in Java?
+2025-01-22 14:35:07 [INFO ] com.tabled.millioner.services.QuestionLoader - Successfully loaded 33 questions for language 'en' and difficulty 'easy'.
+2025-01-22 14:35:07 [INFO ] com.tabled.millioner.services.GameService - Questions reloaded for language: en, difficulty: easy
+2025-01-22 14:35:07 [INFO ] com.tabled.millioner.services.GameService - Number of questions loaded: 33
+2025-01-22 14:35:07 [INFO ] com.tabled.millioner.controller.Controller - Setting a new question.
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 33
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 33
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 33
+2025-01-22 14:35:07 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 33
+2025-01-22 14:35:07 [INFO ] com.tabled.millioner.controller.Controller - Language set to: en
+2025-01-22 14:35:07 [INFO ] com.tabled.millioner.controller.StartController - Language set in GameController: en
+2025-01-22 14:35:08 [INFO ] com.tabled.millioner.controller.StartController - Game scene set successfully.
+2025-01-22 14:35:08 [INFO ] com.tabled.millioner.utils.WavPlayer - Playback completed for file: src/main/resources/com/tabled/millioner/media/audio/start_3sek.wav
+2025-01-22 14:35:08 [INFO ] com.tabled.millioner.utils.WavPlayer - Playback completed for file: src/main/resources/com/tabled/millioner/media/audio/start_3sek.wav
+2025-01-22 14:35:12 [INFO ] com.tabled.millioner.controller.Controller - Processing answer: Vincent van Gogh
+2025-01-22 14:35:12 [INFO ] com.tabled.millioner.services.GameService - Correct answer for question index: 3
+2025-01-22 14:35:12 [INFO ] com.tabled.millioner.services.GameService - Current level updated to: 2
+2025-01-22 14:35:12 [INFO ] com.tabled.millioner.services.GameService - Difficulty level set to: easy
+2025-01-22 14:35:12 [INFO ] com.tabled.millioner.controller.Controller - Loading the next question.
+2025-01-22 14:35:12 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:12 [INFO ] com.tabled.millioner.controller.Controller - Setting a new question.
+2025-01-22 14:35:12 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 32
+2025-01-22 14:35:12 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 32
+2025-01-22 14:35:12 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 32
+2025-01-22 14:35:12 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 32
+2025-01-22 14:35:12 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:12 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:12 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:12 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:12 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:12 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:14 [INFO ] com.tabled.millioner.controller.Controller - Processing answer: Andromeda
+2025-01-22 14:35:14 [INFO ] com.tabled.millioner.services.GameService - Correct answer for question index: 3
+2025-01-22 14:35:14 [INFO ] com.tabled.millioner.services.GameService - Current level updated to: 3
+2025-01-22 14:35:14 [INFO ] com.tabled.millioner.services.GameService - Difficulty level set to: easy
+2025-01-22 14:35:14 [INFO ] com.tabled.millioner.controller.Controller - Loading the next question.
+2025-01-22 14:35:14 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:14 [INFO ] com.tabled.millioner.controller.Controller - Setting a new question.
+2025-01-22 14:35:14 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 31
+2025-01-22 14:35:14 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 31
+2025-01-22 14:35:14 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 31
+2025-01-22 14:35:14 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 31
+2025-01-22 14:35:14 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:14 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:14 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:14 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:14 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:14 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:15 [INFO ] com.tabled.millioner.controller.Controller - Processing answer: Johannes Gutenberg
+2025-01-22 14:35:15 [INFO ] com.tabled.millioner.services.GameService - Correct answer for question index: 25
+2025-01-22 14:35:15 [INFO ] com.tabled.millioner.services.GameService - Current level updated to: 4
+2025-01-22 14:35:15 [INFO ] com.tabled.millioner.services.GameService - Difficulty level set to: easy
+2025-01-22 14:35:15 [INFO ] com.tabled.millioner.controller.Controller - Loading the next question.
+2025-01-22 14:35:15 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:15 [INFO ] com.tabled.millioner.controller.Controller - Setting a new question.
+2025-01-22 14:35:15 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 30
+2025-01-22 14:35:15 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 30
+2025-01-22 14:35:15 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 30
+2025-01-22 14:35:15 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 30
+2025-01-22 14:35:15 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:15 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:15 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:15 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:15 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:15 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:17 [INFO ] com.tabled.millioner.controller.Controller - Processing answer: Nicolaus Copernicus
+2025-01-22 14:35:17 [INFO ] com.tabled.millioner.services.GameService - Correct answer for question index: 24
+2025-01-22 14:35:17 [INFO ] com.tabled.millioner.services.GameService - Current level updated to: 5
+2025-01-22 14:35:17 [INFO ] com.tabled.millioner.services.GameService - Difficulty level set to: medium
+2025-01-22 14:35:17 [INFO ] com.tabled.millioner.services.GameService - Difficulty level set to: medium
+2025-01-22 14:35:17 [INFO ] com.tabled.millioner.services.QuestionLoader - Starting to load questions from file: C:\Users\human\IdeaProjects\Wer-wird-Million-r\target\classes\com\tabled\millioner\data\questions.json
+2025-01-22 14:35:17 [INFO ] com.tabled.millioner.services.QuestionLoader - Language: en, Difficulty: medium
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Successfully parsed JSON file.
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Language section 'en' found.
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Difficulty section 'medium' found for language 'en'.
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which planet is known as the 'Morning Star'?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: In what year did the United States land the first man on the Moon?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the tallest mountain in the world?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which physicist developed the theory of general relativity?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the largest desert in the world?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Who is the author of '1984'?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the largest mammal in the world?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which Austrian physicist is known for his thought experiment involving a cat?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which country was formerly known as Siam?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which planet has the most moons?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the chemical formula for table salt?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the closest star to Earth?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which ocean is the deepest in the world?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Who discovered gravity?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the largest island in the world?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which chemical element is named after a planet?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the smallest country in the world?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which mountain range separates Europe and Asia?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the process by which plants make their own food?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which country has the longest coastline in the world?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the only metal that is liquid at room temperature?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which year was the Internet invented?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which film is considered the first feature-length animated movie?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which game popularized the 'Battle Royale' genre?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which video game features the location 'Rapture'?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the name of the monster in Mary Shelley’s 'Frankenstein'?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Who wrote the novel 'One Hundred Years of Solitude'?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which famous sculpture is located in Florence's Galleria dell'Accademia?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What was the name of the treaty that ended the Napoleonic Wars?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which ancient civilization built Machu Picchu?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: Which keyword is used to create an object in Java?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the size of an int in Java?
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.QuestionLoader - Loaded question: What is the default value of an int variable in Java?
+2025-01-22 14:35:17 [INFO ] com.tabled.millioner.services.QuestionLoader - Successfully loaded 33 questions for language 'en' and difficulty 'medium'.
+2025-01-22 14:35:17 [INFO ] com.tabled.millioner.services.GameService - Questions reloaded for language: en, difficulty: medium
+2025-01-22 14:35:17 [INFO ] com.tabled.millioner.services.GameService - Number of questions loaded: 33
+2025-01-22 14:35:17 [INFO ] com.tabled.millioner.controller.Controller - Loading the next question.
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:17 [INFO ] com.tabled.millioner.controller.Controller - Setting a new question.
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 33
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 33
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 33
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 33
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:17 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:19 [INFO ] com.tabled.millioner.controller.Controller - Processing answer: new
+2025-01-22 14:35:19 [INFO ] com.tabled.millioner.services.GameService - Correct answer for question index: 30
+2025-01-22 14:35:19 [INFO ] com.tabled.millioner.services.GameService - Current level updated to: 6
+2025-01-22 14:35:19 [INFO ] com.tabled.millioner.services.GameService - Safe amount updated to 500€ at level 6.
+2025-01-22 14:35:19 [INFO ] com.tabled.millioner.services.GameService - Difficulty level set to: medium
+2025-01-22 14:35:19 [INFO ] com.tabled.millioner.controller.Controller - Loading the next question.
+2025-01-22 14:35:19 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:19 [INFO ] com.tabled.millioner.controller.Controller - Setting a new question.
+2025-01-22 14:35:19 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 32
+2025-01-22 14:35:19 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 32
+2025-01-22 14:35:19 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 32
+2025-01-22 14:35:19 [DEBUG] com.tabled.millioner.services.GameService - Fetching questions list. Total questions: 32
+2025-01-22 14:35:19 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:19 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:19 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:19 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:19 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:19 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:21 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:21 [INFO ] com.tabled.millioner.controller.Controller - Activating Second Chance lifeline.
+2025-01-22 14:35:21 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:21 [DEBUG] com.tabled.millioner.services.GameService - Fetching current game state.
+2025-01-22 14:35:22 [INFO ] com.tabled.millioner.controller.Controller - Second Chance lifeline activated.
+2025-01-22 14:35:23 [INFO ] com.tabled.millioner.controller.Controller - Processing answer: Jupiter
+2025-01-22 14:35:23 [WARN ] com.tabled.millioner.controller.Controller - First answer was incorrect, but Second Chance is active.
+2025-01-22 14:35:25 [INFO ] com.tabled.millioner.controller.Controller - Processing answer: Mars
+2025-01-22 14:35:25 [INFO ] com.tabled.millioner.services.GameService - Player lost. Safe amount: 500€
+2025-01-22 14:35:25 [INFO ] com.tabled.millioner.services.GameService - Difficulty level set to: easy
+2025-01-22 14:35:25 [ERROR] com.tabled.millioner.controller.Controller - Player lost the game.
+2025-01-22 14:35:25 [INFO ] com.tabled.millioner.utils.WavPlayer - Playing audio file: src/main/resources/com/tabled/millioner/media/audio/lose.wav
+2025-01-22 14:35:25 [INFO ] com.tabled.millioner.utils.WavPlayer - Playback completed for file: src/main/resources/com/tabled/millioner/media/audio/lose.wav
+2025-01-22 14:35:31 [INFO ] com.tabled.millioner.controller.Controller - Displaying safe amount: 500€
+2025-01-22 14:35:32 [INFO ] com.tabled.millioner.utils.WavPlayer - Playback completed for file: src/main/resources/com/tabled/millioner/media/audio/lose.wav
+2025-01-22 14:35:32 [INFO ] com.tabled.millioner.utils.WavPlayer - Playback completed for file: src/main/resources/com/tabled/millioner/media/audio/lose.wav
+2025-01-22 14:35:33 [INFO ] com.tabled.millioner.controller.Controller - Exit button clicked. Returning to the start screen.
+2025-01-22 14:35:33 [INFO ] com.tabled.millioner.controller.StartController - Initializing StartController...
+2025-01-22 14:35:34 [INFO ] com.tabled.millioner.controller.StartController - Exit button clicked. Exiting application.

@@ -69,8 +69,6 @@ public class Controller {
     @FXML
     private Button d;
     @FXML
-    private Button btnRestart;
-    @FXML
     private TextArea question;
 
     private GameService gameService;
@@ -442,27 +440,6 @@ public class Controller {
         logger.info("Language set to: {}", language);
         logger.debug("Questions reloaded for language: {}", language);
         System.out.println("Language set to: " + language);
-    }
-
-    /**
-     * Updates the UI to reflect the current safe amount levels.
-     * Highlights specific levels in the prize ladder (e.g., €1,000 or €32,000) to show
-     * safe amounts where the player cannot lose progress.
-     *
-     * @throws NoSuchFieldException   If the reflection process fails for a required field.
-     * @throws IllegalAccessException If access to the specified field is denied.
-     */
-    private void updateSafeAmountUI() throws NoSuchFieldException, IllegalAccessException {
-        int safeAmount = gameService.getGameState().getSafeAmount();
-        for (int i = 1; i <= 15; i++) {
-            Label label = (Label) getClass().getDeclaredField("label_" + i).get(this);
-            if (i == 5 || i == 10) {
-                label.getStyleClass().add("safe-amount");
-            } else {
-                label.getStyleClass().remove("safe-amount");
-            }
-        }
-        logger.debug("Safe amount UI updated.");
     }
 
     /**
