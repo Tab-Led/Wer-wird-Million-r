@@ -39,7 +39,6 @@ complete with a lot of questions, levels and hints.
 - **JavaFX**: For building the graphical user interface.
 - **Log4j 2**: For application logging.
 - **Maven**: Build automation and dependency management.
-- **JUnit & Mockito**: For unit testing and mocking.
 
 ## Requirements
 - **Java Development Kit (JDK) 11 or higher.**
@@ -84,7 +83,6 @@ Willkommen beim "Wer wird Millionär"-Spiel! Dieses Projekt ist eine JavaFX-Anwe
 - **JavaFX**: Für den Aufbau der grafischen Benutzeroberfläche.
 - **Log4j 2**: Für die Protokollierung der Anwendung.
 - **Maven**: Build-Automatisierung und Abhängigkeitsmanagement.
-- **JUnit & Mockito**: Für Unit-Tests und Mocking.
 
 ---
 
